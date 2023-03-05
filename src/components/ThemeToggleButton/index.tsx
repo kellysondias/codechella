@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
-import { SunIcon, MoonIcon } from "@heroicons/react/24/outline";
-
-// Switch icons to "Font Awesome"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSnowflake, faSun } from "@fortawesome/free-solid-svg-icons";
 
 export const ThemeToggleButton: React.FC = () => {
 	const systemPreference = !window.matchMedia("(prefers-color-scheme: dark)")
@@ -19,12 +18,14 @@ export const ThemeToggleButton: React.FC = () => {
 
 	return (
 		<>
-			<MoonIcon
-				className="dark:hidden h-8 text-white cursor-pointer"
+			<FontAwesomeIcon
+				icon={faSun}
+				className="hidden dark:block h-5 text-white cursor-pointer"
 				onClick={toggle}
 			/>
-			<SunIcon
-				className="hidden dark:block h-8 text-white cursor-pointer"
+			<FontAwesomeIcon
+				icon={faSnowflake}
+				className="dark:hidden h-5 text-white cursor-pointer"
 				onClick={toggle}
 			/>
 		</>

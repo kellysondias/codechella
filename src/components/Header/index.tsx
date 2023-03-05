@@ -9,20 +9,21 @@ export const Header = () => {
 	const headerStrings = Strings.header;
 
 	return (
-		<header className="bg-summer-blue-100 dark:bg-boreal-blue-100 flex justify-evenly items-center">
+		<header className="bg-summer-blue-100 flex flex-wrap justify-evenly items-center text-center dark:bg-boreal-blue-100 md:flex-col md:relative md:pb-8">
 			<img
 				src={Logo}
-				className=""
 				alt={headerStrings.logoAlt}
 			/>
-			<nav>
-				<ul className="flex text-white space-x-4">
+			<nav className="font-nav">
+				<ul className="flex flex-wrap text-white space-x-4 text-center">
 					{headerStrings.nav.map((text, index) => (
-                        <li key={index}>{text}</li>
-                    ))}
+						<li key={index}>{text}</li>
+					))}
 				</ul>
+				<div className="md:absolute right-4 bottom-5">
+					<ThemeToggleButton />
+				</div>
 			</nav>
-			<ThemeToggleButton />
 		</header>
 	);
 };

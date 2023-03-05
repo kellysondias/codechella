@@ -7,15 +7,19 @@ module.exports = {
 			colors: {
 				summer: {
 					blue: {
-						100: "#2e7ba2"
-					}
+						100: "#2e7ba2",
+					},
 				},
 				boreal: {
 					blue: {
-						100: "#4650bd"
-					}
-				}
-			}
+						100: "#4650bd",
+					},
+				},
+			},
+			fontFamily: {
+				nav: ["Raleway"],
+				title: ["Calistoga"],
+			},
 		},
 	},
 	plugins: [],
