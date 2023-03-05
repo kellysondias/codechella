@@ -5,7 +5,7 @@ import { ThemeToggleButton } from "../ThemeToggleButton";
 
 // Watch two videos
 
-export const Header = () => {
+export const Header:React.FC = () => {
 	const headerStrings = Strings.header;
 
 	return (
