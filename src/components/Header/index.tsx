@@ -3,6 +3,8 @@ import Logo from "../../assets/img/logo.svg";
 import { Strings } from "../../strings";
 import { ThemeToggleButton } from "../ThemeToggleButton";
 
+// Watch two videos
+
 export const Header = () => {
 	const headerStrings = Strings.header;
 
