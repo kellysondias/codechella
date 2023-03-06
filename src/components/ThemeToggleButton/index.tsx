@@ -8,7 +8,7 @@ export const ThemeToggleButton: React.FC = () => {
 
 	const root = document.getElementById("root");
 
-	const pageClasses = root.classList;
+	const pageClasses = root!.classList;
 
 	useEffect(() => {
 		systemPreference && pageClasses.add("dark");
