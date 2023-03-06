@@ -3,8 +3,6 @@ import Logo from "../../assets/img/logo.svg";
 import { Strings } from "../../strings";
 import { ThemeToggleButton } from "../ThemeToggleButton";
 
-// Watch two videos
-
 export const Header:React.FC = () => {
 	const headerStrings = Strings.header;
 
