@@ -1,13 +1,13 @@
 import React from "react";
-import Logo from "../../assets/img/logo.svg";
+import Logo from "/img/logo.svg";
 import { Strings } from "../../strings";
 import { ThemeToggleButton } from "../ThemeToggleButton";
 
-export const Header:React.FC = () => {
+export const Header: React.FC = () => {
 	const headerStrings = Strings.header;
 
 	return (
-		<header className="bg-summer-blue-100 flex flex-wrap justify-evenly items-center text-center dark:bg-boreal-blue-100 md:flex-col md:relative md:pb-8">
+		<header className="bg-summer-blue-100 flex flex-wrap justify-evenly items-center text-center dark:bg-boreal-blue-100">
 			<img
 				src={Logo}
 				alt={headerStrings.logoAlt}
@@ -18,9 +18,7 @@ export const Header:React.FC = () => {
 						<li key={index}>{text}</li>
 					))}
 				</ul>
-				<div className="md:absolute right-4 bottom-5">
-					<ThemeToggleButton />
-				</div>
+				<ThemeToggleButton />
 			</nav>
 		</header>
 	);

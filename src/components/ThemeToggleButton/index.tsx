@@ -22,7 +22,7 @@ export const ThemeToggleButton: React.FC = () => {
 		<>
 			<FontAwesomeIcon
 				icon={faSun}
-				className="hidden dark:block h-5 text-white cursor-pointer"
+				className="hidden dark:inline-block h-5 text-white cursor-pointer"
 				onClick={toggle}
 			/>
 			<FontAwesomeIcon
