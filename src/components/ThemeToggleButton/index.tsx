@@ -6,7 +6,9 @@ export const ThemeToggleButton: React.FC = () => {
 	const systemPreference = !window.matchMedia("(prefers-color-scheme: dark)")
 		.matches;
 
-	const pageClasses = document.documentElement.classList;
+	const root = document.getElementById("root");
+
+	const pageClasses = root.classList;
 
 	useEffect(() => {
 		systemPreference && pageClasses.add("dark");
