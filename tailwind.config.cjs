@@ -17,7 +17,7 @@ module.exports = {
 				},
 			},
 			fontFamily: {
-				nav: ["Raleway"],
+				text: ["Raleway"],
 				title: ["Calistoga"],
 			},
 		},
