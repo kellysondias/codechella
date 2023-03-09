@@ -4,7 +4,7 @@ import { NavigationMenu } from "../NavigationMenu";
 import { ThemeToggleButton } from "../ThemeToggleButton";
 
 export const Header: React.FC = () => (
-	<header className="bg-summer-blue-100 flex-col flex-wrap justify-evenly items-center text-center dark:bg-boreal-blue-100 md:flex-row">
+	<header className="bg-summer-blue-100 flex flex-row justify-evenly items-center text-center dark:bg-boreal-blue-100 sm:flex-col md:flex-row z-50">
 		<Logo />
 		<NavigationMenu />
 		<ThemeToggleButton />
