@@ -11,7 +11,7 @@ export const MobileMenu: React.FC<MobileMenuProps> = ({
 	onClick,
 	isActive,
 }) => (
-	<div className="z-40 cursor-pointer text-white text-3xl sm:hidden">
+	<div className="z-50 cursor-pointer text-white text-3xl sm:hidden">
 		{isActive ? (
 			<FontAwesomeIcon
 				icon={faX}

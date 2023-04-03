@@ -20,6 +20,19 @@ module.exports = {
 				text: ["Raleway"],
 				title: ["Calistoga"],
 			},
+			keyframes: {
+				backInDown_kf: {
+					from: {
+						transform: "translateY(-200px)",
+					},
+					to: {
+						transform: "translateY(40)",
+					},
+				},
+			},
+			animation: {
+				backInDown: "backInDown_kf 0.50s",
+			},
 		},
 	},
 	plugins: [],
