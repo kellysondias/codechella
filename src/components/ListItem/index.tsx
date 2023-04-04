@@ -18,10 +18,8 @@ export const ListItem: React.FC<ListItemProps> = ({
 			className={`w-full ${
 				index !== lastItem
 					? "border-b-2 border-white pb-2 mb-3"
-					: index == lastItem
-					? "pb-0 mb-0"
-					: ""
-			} sm:w-auto sm:border-none `}
+					: index == lastItem && "pb-0 mb-0"
+			} sm:w-auto sm:border-none sm:pb-0 sm:mb-0 `}
 		>
 			{children}
 		</li>
