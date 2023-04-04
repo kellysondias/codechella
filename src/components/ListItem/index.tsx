@@ -23,7 +23,7 @@ export const ListItem: React.FC<ListItemProps> = ({
 					: ""
 			} sm:w-auto sm:border-none `}
 		>
-			<>{children}</>
+			{children}
 		</li>
 	);
 };
