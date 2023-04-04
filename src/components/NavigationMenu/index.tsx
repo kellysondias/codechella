@@ -3,8 +3,6 @@ import Strings from "../../strings";
 import { ListItem } from "../ListItem";
 import { MobileMenu } from "../MobileMenu";
 
-// Assistir aulas sobre animação no Tailwind (https://cursos.alura.com.br/course/tailwind-css-estilizando-pagina-classes-utilitarias/task/105536)
-
 export const NavigationMenu: React.FC = () => {
 	const navStrings = Strings.components.navigationMenu;
 
