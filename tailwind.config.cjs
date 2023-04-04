@@ -23,7 +23,7 @@ module.exports = {
 			keyframes: {
 				backInDown_kf: {
 					from: {
-						transform: "translateY(-200px)",
+						transform: "translateY(-300px)",
 					},
 					to: {
 						transform: "translateY(40)",
