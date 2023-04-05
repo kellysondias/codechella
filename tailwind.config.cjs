@@ -21,6 +21,11 @@ module.exports = {
 				title: ["Calistoga"],
 			},
 			keyframes: {
+				backOut_kf: {
+					to: {
+						opacity: 0,
+					},
+				},
 				backInDown_kf: {
 					from: {
 						transform: "translateY(-300px)",
@@ -29,9 +34,17 @@ module.exports = {
 						transform: "translateY(40)",
 					},
 				},
+				backOutUp_kf: {
+					to: {
+						opacity: 0,
+						transform: "translateY(-300px)",
+					},
+				},
 			},
 			animation: {
+				backOut: "backOut_kf 0.50s ",
 				backInDown: "backInDown_kf 0.50s",
+				backOutUp: "backOutUp_kf 0.25s",
 			},
 		},
 	},
