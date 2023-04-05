@@ -12,8 +12,6 @@ export const NavigationMenu: React.FC = () => {
 		isActive ? setIsActive(false) : setIsActive(true);
 	};
 
-	console.log(isActive)
-
 	return (
 		<div className="flex">
 			<MobileMenu
