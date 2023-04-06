@@ -9,6 +9,10 @@ export const NavigationMenu: React.FC = () => {
 	const [isActive, setIsActive] = useState(false);
 	const [isHidden, setIsHidden] = useState(true);
 
+	const handleMenu = () => {
+		setIsActive(!isActive);
+	};
+
 	useEffect(() => {
 		if (isActive) {
 			setIsHidden(false);
@@ -19,10 +23,6 @@ export const NavigationMenu: React.FC = () => {
 			return () => clearTimeout(timeoutId);
 		}
 	}, [isActive]);
-
-	const handleMenu = () => {
-		setIsActive(!isActive);
-	};
 
 	return (
 		<div className="flex">
@@ -39,7 +39,7 @@ export const NavigationMenu: React.FC = () => {
 			>
 				<ul
 					className={`flex flex-col absolute ${
-						isActive && "animate-backInDown"
+						isActive ? "animate-backInDown" : "animate-backOutUp"
 					} bg-summer-blue-100 dark:bg-boreal-blue-100 text-center top-40 space-x-0 justify-center items-center p-5 opacity-100  sm:animate-none sm:static sm:bg-transparent sm:flex-row sm:space-x-10 md:mb-0 md:space-x-4 lg:space-x-10`}
 				>
 					{navStrings.map((text, index) => (
