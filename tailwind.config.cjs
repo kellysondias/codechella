@@ -44,7 +44,7 @@ module.exports = {
 			animation: {
 				backOut: "backOut_kf 0.50s ",
 				backInDown: "backInDown_kf 0.50s",
-				backOutUp: "backOutUp_kf 0.25s",
+				backOutUp: "backOutUp_kf 0.40s",
 			},
 		},
 	},
