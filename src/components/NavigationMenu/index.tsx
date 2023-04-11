@@ -34,8 +34,8 @@ export const NavigationMenu: React.FC = () => {
 				className={`${
 					isActive
 						? "flex"
-						: `animate-backOut transition-opacity ${isHidden && "hidden"}`
-				} absolute font-text text-white before:block before:absolute before:-inset-1 before:bg-summer-blue-100 before:opacity-10 inline-block w-full h-full inset-0 justify-center before:dark:bg-boreal-blue-100 sm:block sm:static sm:bg-transparent sm:before:hidden`}
+						: `animate-backOut transition-opacity ${isHidden && "hidden"} sm:animate-none`
+				} absolute font-text text-white before:block before:absolute before:-inset-1 before:bg-summer-blue-100 before:opacity-10 inline-block w-full h-full inset-0 justify-center items-center before:dark:bg-boreal-blue-100 sm:block sm:static sm:bg-transparent sm:before:hidden`}
 			>
 				<ul
 					className={`flex flex-col absolute ${
