@@ -3,8 +3,8 @@ import React, { useState, useEffect } from "react";
 import Strings from "../../strings";
 
 import { List } from "../List";
-import { StyledNav } from "../StyledNav";
 import { ListItem } from "../ListItem";
+import { StyledNav } from "../StyledNav";
 import { MobileMenu } from "../MobileMenu";
 
 export const NavigationMenu: React.FC = () => {
