@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "/assets/img/logo.svg";
-import Strings from "../../strings";
+import Strings from "../../../strings";
 
 export const Logo: React.FC = () => {
 	const logoStrings = Strings.components.logo;

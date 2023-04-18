@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import Strings from "../../../../strings";
+import Strings from "../../../strings";
 
 import { List } from "../List";
 import { ListItem } from "../ListItem";

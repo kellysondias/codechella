@@ -46,6 +46,9 @@ module.exports = {
 				backInDown: "backInDown_kf 0.50s",
 				backOutUp: "backOutUp_kf 0.40s",
 			},
+			backgroundImage: {
+				summerHero: "url('/assets/img/summer-banner.jpeg')",
+			},
 		},
 	},
 	plugins: [],
