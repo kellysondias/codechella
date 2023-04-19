@@ -9,11 +9,13 @@ module.exports = {
 					blue: {
 						100: "#2e7ba2",
 					},
+					hero: "#444444"
 				},
 				boreal: {
 					blue: {
 						100: "#4650bd",
 					},
+					hero: "#ffffff"
 				},
 			},
 			fontFamily: {
@@ -47,7 +49,8 @@ module.exports = {
 				backOutUp: "backOutUp_kf 0.40s",
 			},
 			backgroundImage: {
-				summerHero: "url('/assets/img/summer-banner.jpeg')",
+				"summer-banner": "url('/assets/img/banners/summer-banner.jpeg')",
+				"boreal-banner": "url('/assets/img/banners/boreal-banner.jpeg')"
 			},
 		},
 	},

@@ -3,13 +3,23 @@ const Strings = {
 		logo: {
 			logoAlt: "Logo do Codechella",
 		},
-		navigationMenu: [
-			"A experiência",
-			"Mapa de Setores",
-			"Informações",
-			"Ingresso",
-		],
 	},
+	pages: {
+		header: {
+			navigationMenu: [
+				"A experiência",
+				"Mapa de Setores",
+				"Informações",
+				"Ingresso",
+			],
+		},
+		home: {
+			hero: {
+				lineOne: "Boas-vindas ao",
+				lineTwo: "#CodeChella2023!"
+			}
+		}
+	}
 };
 
 export default Strings;

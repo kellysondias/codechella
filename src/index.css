@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Calistoga&family=Raleway:wght@700&display=swap");
 
 @tailwind base;
+
+@layer base {
+	h1 {
+		@apply font-title;
+	}
+
+	p,
+	nav {
+		@apply font-text;
+	}
+}
+
 @tailwind components;
 @tailwind utilities;

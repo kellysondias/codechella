@@ -8,7 +8,7 @@ import { StyledNav } from "../StyledNav";
 import { MobileMenu } from "../MobileMenu";
 
 export const NavigationMenu: React.FC = () => {
-	const navStrings = Strings.components.navigationMenu;
+	const navStrings = Strings.pages.header.navigationMenu;
 
 	const [isActive, setIsActive] = useState(false);
 	const [isHidden, setIsHidden] = useState(true);
