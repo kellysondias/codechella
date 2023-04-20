@@ -1,6 +1,4 @@
-import React from "react";
-
-const Strings = {
+const strings = {
 	components: {
 		logo: {
 			logoAlt: "Logo do Codechella",
@@ -18,10 +16,10 @@ const Strings = {
 		home: {
 			hero: {
 				lineOne: "Boas-vindas ao",
-				lineTwo: "#CodeChella2023!"
-			}
-		}
-	}
+				lineTwo: "#CodeChella2023!",
+			},
+		},
+	},
 };
 
-export default Strings;
+export default strings;

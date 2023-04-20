@@ -1,9 +1,9 @@
 import React from "react";
 import headerLogo from "/assets/img/logo.svg";
-import Strings from "../../../strings";
+import strings from "../../strings";
 
 export const HeaderLogo: React.FC = () => {
-	const logoStrings = Strings.components.logo;
+	const logoStrings = strings.components.logo;
 
 	return (
 		<div className="flex justify-center md:py-5">

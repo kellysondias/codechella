@@ -1,9 +1,9 @@
 import React from "react";
 
-import Strings from "../../../strings";
+import strings from "../../../strings";
 
 export const Hero: React.FC = () => {
-	const heroString = Strings.pages.home.hero;
+	const heroString = strings.pages.home.hero;
 
 	return (
 		<section className="bg-summer-banner w-full h-96 bg-no-repeat bg-cover bg-center dark:bg-boreal-banner">
