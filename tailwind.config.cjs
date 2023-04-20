@@ -9,11 +9,21 @@ module.exports = {
 					blue: {
 						100: "#2e7ba2",
 					},
+					gradient: {
+						100: "#c8deef",
+						200: "#fbf0dd",
+						300: "#facf9d",
+					},
 					hero: "#444444"
 				},
 				boreal: {
 					blue: {
 						100: "#4650bd",
+					},
+					gradient: {
+						100: "#304968",
+						200: "#36c1a0",
+						300: "#b6bcff",
 					},
 					hero: "#ffffff"
 				},
@@ -44,13 +54,13 @@ module.exports = {
 				},
 			},
 			animation: {
-				backOut: "backOut_kf 0.50s ",
-				backInDown: "backInDown_kf 0.50s",
-				backOutUp: "backOutUp_kf 0.40s",
+				"back-out": "backOut_kf 0.50s ",
+				"back-in-down": "backInDown_kf 0.50s",
+				"back-out-up": "backOutUp_kf 0.40s",
 			},
 			backgroundImage: {
-				"summer-banner": "url('/assets/img/banners/summer-banner.jpeg')",
-				"boreal-banner": "url('/assets/img/banners/boreal-banner.jpeg')"
+				"summer-banner": "url('/assets/img/summer/summer-banner.jpeg')",
+				"boreal-banner": "url('/assets/img/boreal/boreal-banner.jpeg')"
 			},
 		},
 	},

@@ -3,7 +3,8 @@
 @tailwind base;
 
 @layer base {
-	h1 {
+	h1,
+	h2 {
 		@apply font-title;
 	}
 
