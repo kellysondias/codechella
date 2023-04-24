@@ -14,7 +14,7 @@ module.exports = {
 						200: "#fbf0dd",
 						300: "#facf9d",
 					},
-					hero: "#444444"
+					hero: "#444444",
 				},
 				boreal: {
 					blue: {
@@ -25,12 +25,12 @@ module.exports = {
 						200: "#36c1a0",
 						300: "#b6bcff",
 					},
-					hero: "#ffffff"
+					hero: "#ffffff",
 				},
 			},
 			fontFamily: {
-				text: ["Raleway"],
-				title: ["Calistoga"],
+				text: "Raleway",
+				title: "Calistoga",
 			},
 			keyframes: {
 				backOut_kf: {
@@ -60,7 +60,7 @@ module.exports = {
 			},
 			backgroundImage: {
 				"summer-banner": "url('/assets/img/summer/summer-banner.jpeg')",
-				"boreal-banner": "url('/assets/img/boreal/boreal-banner.jpeg')"
+				"boreal-banner": "url('/assets/img/boreal/boreal-banner.jpeg')",
 			},
 		},
 	},

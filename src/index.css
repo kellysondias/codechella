@@ -10,7 +10,7 @@
 
 	p,
 	nav {
-		@apply font-text;
+		@apply font-text font-thin;
 	}
 }
 
