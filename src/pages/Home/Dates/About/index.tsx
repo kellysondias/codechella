@@ -9,9 +9,10 @@ import strings from "../../../../strings";
 
 export const About = () => {
 	const aboutStrings = strings.pages.home.dates.about;
-    const icon = faTicket
+	const isAbout = true;
+	const icon = faTicket;
 	const image = {
-		src: "https://pbs.twimg.com/media/EShHsv6WkAAa1ip.jpg",
+		src: "/assets/img/summer/summer-1.jpeg",
 		alt: "PAH",
 	};
 	return (
@@ -20,6 +21,7 @@ export const About = () => {
 				image={image}
 				title={aboutStrings.title}
 				text={aboutStrings.text}
+                isAbout
 			/>
 			<Button icon={icon}>{aboutStrings.button}</Button>
 		</div>

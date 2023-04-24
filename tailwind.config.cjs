@@ -61,6 +61,8 @@ module.exports = {
 			backgroundImage: {
 				"summer-banner": "url('/assets/img/summer/summer-banner.jpeg')",
 				"boreal-banner": "url('/assets/img/boreal/boreal-banner.jpeg')",
+				"summer-about": "url('/assets/img/summer/summer-1.jpeg')",
+				"boreal-about": "url('/assets/img/boreal/boreal-1.jpeg')",
 			},
 		},
 	},
