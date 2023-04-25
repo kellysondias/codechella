@@ -6,22 +6,21 @@ type Image = {
 };
 
 interface ICard {
-	image: Image;
+	image?: Image;
 	title: string;
 	text: string;
-	isAbout?: boolean;
 }
 
-export const Card: React.FC<ICard> = ({ image, title, text, isAbout }) => (
+export const Card: React.FC<ICard> = ({ image, title, text }) => (
 	<div className="flex flex-col justify-center items-center">
 		<div className="h-full w-full">
-			{isAbout ? (
-				<div className="bg-summer-about dark:bg-boreal-about w-full h-96 bg-contain bg-no-repeat" />
-			) : (
+			{image ? (
 				<img
-					src={image.src}
-					alt={image.alt}
+					src={image?.src}
+					alt={image?.alt}
 				/>
+			) : (
+				<div className="bg-summer-about dark:bg-boreal-about w-full h-96 bg-contain bg-no-repeat" />
 			)}
 		</div>
 		<h2>{title}</h2>
