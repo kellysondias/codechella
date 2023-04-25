@@ -13,7 +13,7 @@ interface ICard {
 
 export const Card: React.FC<ICard> = ({ image, title, text }) => (
 	<div className="flex flex-col justify-center items-center">
-		<div className="flex flex-col justify-center items-center w-full h-full bg-green-500/10">
+		<div className="flex flex-col justify-center items-center w-full h-full">
 			{image ? (
 				<img
 					src={image?.src}
