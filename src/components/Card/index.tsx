@@ -20,7 +20,7 @@ export const Card: React.FC<ICard> = ({ image, title, text }) => (
 					alt={image?.alt}
 				/>
 			) : (
-				<div className="bg-summer-about dark:bg-boreal-about w-full h-96 bg-contain bg-no-repeat" />
+				<div className="bg-summer-card dark:bg-boreal-card w-40 h-96 bg-contain bg-no-repeat" />
 			)}
 		</div>
 		<h2>{title}</h2>
