@@ -13,17 +13,19 @@ interface ICard {
 
 export const Card: React.FC<ICard> = ({ image, title, text }) => (
 	<div className="flex flex-col justify-center items-center">
-		<div className="h-full w-full">
+		<div className="flex flex-col justify-center items-center w-full h-full bg-green-500/10">
 			{image ? (
 				<img
 					src={image?.src}
 					alt={image?.alt}
 				/>
 			) : (
-				<div className="bg-summer-card dark:bg-boreal-card w-40 h-96 bg-contain bg-no-repeat" />
+				<div className="bg-summer-card dark:bg-boreal-card w-64 h-96 bg-contain bg-no-repeat" />
 			)}
 		</div>
-		<h2>{title}</h2>
-		<p>{text}</p>
+		<div>
+			<h2>{title}</h2>
+			<p>{text}</p>
+		</div>
 	</div>
 );
