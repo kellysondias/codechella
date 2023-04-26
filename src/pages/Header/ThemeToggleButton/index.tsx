@@ -19,7 +19,7 @@ export const ThemeToggleButton: React.FC = () => {
 	};
 
 	return (
-		<div className="hidden absolute md:static right-5 top-5 md sm:block">
+		<div className="text-center hidden absolute md:static right-5 top-5 md sm:block">
 			<FontAwesomeIcon
 				icon={faSun}
 				className="hidden dark:inline-block h-5 text-white cursor-pointer md:h-7"

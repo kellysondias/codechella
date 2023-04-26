@@ -1,26 +1,26 @@
 import React from "react";
 
-import { Button } from "../../../../components/Button";
 import { Card } from "../../../../components/Card";
-
 import { faTicket } from "@fortawesome/free-solid-svg-icons";
 
 import strings from "../../../../strings";
 
-export const About = () => {
+export const About: React.FC = () => {
 	const aboutStrings = strings.pages.home.dates.about;
-	const icon = faTicket;
-	const image = {
-		src: "/assets/img/summer/summer-1.jpeg",
-		alt: "PAH",
+	
+	const ticketButton = {
+		text: aboutStrings.button,
+		icon: faTicket,
 	};
+
 	return (
-		<div className="">
+		<div className="flex flex-col flex-wrap text-center">
 			<Card
+				image={{src:"/assets/img/boreal/boreal-1.jpeg"}}
+				button={ticketButton}
 				title={aboutStrings.title}
 				text={aboutStrings.text}
 			/>
-			<Button icon={icon}>{aboutStrings.button}</Button>
 		</div>
 	);
 };
