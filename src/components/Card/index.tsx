@@ -26,9 +26,9 @@ export const Card: React.FC<ICard> = ({ image, title, text, button }) => {
 	const hasButton = Boolean(button);
 
 	return (
-		<div className="text-center">
+		<div className="flex flex-wrap">
 			<ImageRenderer customImage={image} />
-			<div>
+			<div className="flex flex-col items-center justify-center text-center">
 				<h2 className="text-3xl">{title}</h2>
 				<p className="text-xl">{text}</p>
 				{hasButton && <Button icon={button?.icon}>{button?.text}</Button>}
