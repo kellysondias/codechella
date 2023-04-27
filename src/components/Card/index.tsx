@@ -5,7 +5,7 @@ import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import { Button } from "../Button";
 
 type Image = {
-	src: string;
+	url: string;
 	alt?: string;
 };
 
@@ -28,14 +28,17 @@ export const Card: React.FC<ICard> = ({ image, title, text, button }) => {
 		<div className="text-center">
 			<div className="flex justify-center w-full h-full">
 				{image ? (
-					<div
-						className={`bg-[url('${image?.src}')] w-64 h-96 bg-contain bg-no-repeat rounded-lg`}
-					>
-						{/*<img
-							src={image?.src}
-							alt={image?.alt}
-						/> */}
-					</div>
+					<>
+						<div
+							className={`bg-[url('${image?.url}')] w-64 h-96 bg-contain bg-no-repeat rounded-lg`}
+						>
+							{/*<img
+								src={image?.src}
+								alt={image?.alt}
+							/> */}
+						</div>
+						{image.alt && <span>{image.alt}</span>}
+					</>
 				) : (
 					<div className="bg-summer-card w-64 h-96 bg-contain bg-no-repeat rounded-lg dark:bg-boreal-card dark:h-40" />
 				)}
