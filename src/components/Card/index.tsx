@@ -23,12 +23,12 @@ interface ICard {
 
 export const Card: React.FC<ICard> = ({ image, title, text, button }) => {
 	const hasButton = Boolean(button);
-
+	console.log(image)
 	return (
 		<div className="text-center">
 			<div className="flex justify-center w-full h-full">
 				{image ? (
-					<>
+					<div className="flex flex-col">
 						<div
 							className={`bg-[url('${image?.url}')] w-64 h-96 bg-contain bg-no-repeat rounded-lg`}
 						>
@@ -37,8 +37,8 @@ export const Card: React.FC<ICard> = ({ image, title, text, button }) => {
 								alt={image?.alt}
 							/> */}
 						</div>
-						{image.alt && <span>{image.alt}</span>}
-					</>
+						{image?.alt && <span className="sr-only">{image?.alt}</span>}
+					</div>
 				) : (
 					<div className="bg-summer-card w-64 h-96 bg-contain bg-no-repeat rounded-lg dark:bg-boreal-card dark:h-40" />
 				)}

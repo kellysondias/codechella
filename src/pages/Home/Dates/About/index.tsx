@@ -7,7 +7,7 @@ import strings from "../../../../strings";
 
 export const About: React.FC = () => {
 	const aboutStrings = strings.pages.home.dates.about;
-	
+
 	const ticketButton = {
 		text: aboutStrings.button,
 		icon: faTicket,
@@ -16,7 +16,10 @@ export const About: React.FC = () => {
 	return (
 		<div className="flex flex-col flex-wrap text-center">
 			<Card
-				image={{url:"/assets/img/boreal/boreal-1.jpeg"}}
+				image={{
+					url: "/assets/img/summer/summer-1.jpeg",
+					alt: "Texto alternativo",
+				}}
 				button={ticketButton}
 				title={aboutStrings.title}
 				text={aboutStrings.text}
