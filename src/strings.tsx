@@ -3,6 +3,12 @@ const strings = {
 		logo: {
 			logoAlt: "Logo do Codechella",
 		},
+		card: {
+			imageRenderer: {
+				summerAlt: "A imagem apresentada no tema 'summer' apresenta pessoas cantando e dançando em um festival de música",
+				borealAlt: "A imagem apresentada no tema 'boreal' apresenta uma banda tocando no palco de um festival de música"
+			}
+		}
 	},
 	pages: {
 		header: {

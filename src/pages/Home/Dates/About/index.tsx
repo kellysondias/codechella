@@ -16,10 +16,7 @@ export const About: React.FC = () => {
 	return (
 		<div className="flex flex-col flex-wrap text-center">
 			<Card
-				image={{
-					url: "/assets/img/summer/summer-1.jpeg",
-					alt: "Texto alternativo",
-				}}
+				// image={{ url: "/assets/img/boreal/boreal-1.jpeg" }}
 				button={ticketButton}
 				title={aboutStrings.title}
 				text={aboutStrings.text}

@@ -3,8 +3,9 @@ import React, { ReactElement } from "react";
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 
 import { Button } from "../Button";
+import { ImageRenderer } from "./ImageRenderer";
 
-type Image = {
+export type Image = {
 	url: string;
 	alt?: string;
 };
@@ -23,26 +24,10 @@ interface ICard {
 
 export const Card: React.FC<ICard> = ({ image, title, text, button }) => {
 	const hasButton = Boolean(button);
-	console.log(image)
+
 	return (
 		<div className="text-center">
-			<div className="flex justify-center w-full h-full">
-				{image ? (
-					<div className="flex flex-col">
-						<div
-							className={`bg-[url('${image?.url}')] w-64 h-96 bg-contain bg-no-repeat rounded-lg`}
-						>
-							{/*<img
-								src={image?.src}
-								alt={image?.alt}
-							/> */}
-						</div>
-						{image?.alt && <span className="sr-only">{image?.alt}</span>}
-					</div>
-				) : (
-					<div className="bg-summer-card w-64 h-96 bg-contain bg-no-repeat rounded-lg dark:bg-boreal-card dark:h-40" />
-				)}
-			</div>
+			<ImageRenderer customImage={image} />
 			<div>
 				<h2 className="text-3xl">{title}</h2>
 				<p className="text-xl">{text}</p>

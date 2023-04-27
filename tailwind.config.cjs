@@ -64,6 +64,7 @@ module.exports = {
 				"summer-card": "url('/assets/img/summer/summer-1.jpeg')",
 				"boreal-card": "url('/assets/img/boreal/boreal-1.jpeg')",
 			},
+			
 		},
 	},
 	plugins: [],
