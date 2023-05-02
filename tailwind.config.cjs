@@ -14,7 +14,7 @@ module.exports = {
 						200: "#fbf0dd",
 						300: "#facf9d",
 					},
-					hero: "#444444",
+					gray: "#444444",
 				},
 				boreal: {
 					blue: {
@@ -64,7 +64,6 @@ module.exports = {
 				"summer-card": "url('/assets/img/summer/summer-1.jpeg')",
 				"boreal-card": "url('/assets/img/boreal/boreal-1.jpeg')",
 			},
-			
 		},
 	},
 	plugins: [],

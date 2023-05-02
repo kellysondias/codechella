@@ -9,14 +9,13 @@ export const About: React.FC = () => {
 	const aboutStrings = strings.pages.home.dates.about;
 
 	const ticketButton = {
-		text: aboutStrings.button,
+		children: aboutStrings.button,
 		icon: faTicket,
 	};
 
 	return (
-		<div className="flex flex-col flex-wrap text-center">
+		<div className="text-center">
 			<Card
-				// image={{ url: "/assets/img/boreal/boreal-1.jpeg" }}
 				button={ticketButton}
 				title={aboutStrings.title}
 				text={aboutStrings.text}

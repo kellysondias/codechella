@@ -1,39 +1,33 @@
 import React from "react";
-import { Image } from "..";
+
+import { Image } from "../../../Types/Image";
+
 import strings from "../../../strings";
 
-interface IImageRenderer {
-	customImage?: Image;
-}
-
-export const ImageRenderer: React.FC<IImageRenderer> = ({ customImage }) => {
+export const ImageRenderer: React.FC<{ customImage?: Image }> = ({
+	customImage,
+}) => {
 	const url = customImage?.url;
 	const alt = customImage?.alt;
+
 	const imageRendererStrings = strings.components.card.imageRenderer;
 
 	const hasImage = Boolean(customImage);
 	const hasAlt = Boolean(customImage?.alt);
 
-	const style = {
-		customImage: "w-80 h-96 bg-cover bg-center bg-no-repeat rounded-lg my-8",
-		align: "flex flex-col items-center",
-	};
-
 	return (
-		<div className="flex justify-center w-full h-full">
+		<div className="flex justify-center h-full">
 			{hasImage ? (
-				<div className={`${style.align}`}>
+				<div className="align-rendered-image">
 					<div
 						style={{ backgroundImage: `url(${url})` }}
-						className={`${style.customImage}`}
+						className="rendered-image"
 					/>
 					{hasAlt && <span className="sr-only">{alt}</span>}
 				</div>
 			) : (
-				<div className={`${style.align}`}>
-					<div
-						className={`${style.customImage} bg-summer-card dark:bg-boreal-card`}
-					/>
+				<div className="align-rendered-image">
+					<div className="rendered-default-image" />
 
 					<span className="sr-only dark:hidden">
 						{imageRendererStrings.summerAlt}

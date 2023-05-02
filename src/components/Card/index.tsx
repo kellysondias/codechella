@@ -1,37 +1,28 @@
-import React, { ReactElement } from "react";
-
-import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+import React from "react";
 
 import { Button } from "../Button";
 import { ImageRenderer } from "./ImageRenderer";
 
-export type Image = {
-	url: string;
-	alt?: string;
-};
-
-type ButtonElement = {
-	text: string;
-	icon: string | ReactElement | IconDefinition;
-};
+import type { Image } from "../../Types/Image";
+import type { ButtonComponent } from "../../Types/ButtonComponent";
 
 interface ICard {
 	image?: Image;
 	title: string;
 	text: string;
-	button?: ButtonElement;
+	button?: ButtonComponent;
 }
 
 export const Card: React.FC<ICard> = ({ image, title, text, button }) => {
 	const hasButton = Boolean(button);
 
 	return (
-		<div className="flex flex-wrap">
+		<div className="flex justify-center items-center mx-16 py-28 max-[1257px]:flex-wrap max-[1257px]:py-8">
 			<ImageRenderer customImage={image} />
-			<div className="flex flex-col items-center justify-center text-center">
-				<h2 className="text-3xl">{title}</h2>
-				<p className="text-xl">{text}</p>
-				{hasButton && <Button icon={button?.icon}>{button?.text}</Button>}
+			<div className="card-text">
+				<h2 className="text-3xl my-6 md:mx-20 lg:mx-0">{title}</h2>
+				<p className="text-xl leading-loose">{text}</p>
+				{hasButton && <Button icon={button?.icon}>{button?.children}</Button>}
 			</div>
 		</div>
 	);
