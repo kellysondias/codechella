@@ -10,12 +10,12 @@ export const ImageRenderer: React.FC<{ customImage?: Image }> = ({ customImage }
 
 	const imageRendererStrings = strings.components.card.imageRenderer;
 
-	const hasImage = Boolean(customImage);
+	const hasCustomImage = Boolean(customImage);
 	const hasAlt = Boolean(customImage?.alt);
 
 	return (
 		<div className="flex justify-center h-full">
-			{hasImage ? (
+			{hasCustomImage ? (
 				<div className="align-rendered-image">
 					<div
 						style={{ backgroundImage: `url(${url})` }}
