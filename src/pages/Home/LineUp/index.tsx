@@ -1,7 +1,7 @@
 import React from "react";
 import strings from "../../../strings";
 
-export const LineUp = () => {
+export const LineUp:React.FC = () => {
 	const lineUpStrings = strings.pages.home.lineUp;
 
 	return (
