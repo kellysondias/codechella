@@ -4,10 +4,7 @@ import { Image } from "../../../Types/Image";
 
 import strings from "../../../strings";
 
-export const ImageRenderer: React.FC<{ customImage?: Image }> = ({
-	customImage,
-}) => {
-// Desestruturar 
+export const ImageRenderer: React.FC<{ customImage?: Image }> = ({ customImage }) => {
 	const url = customImage?.url;
 	const alt = customImage?.alt;
 
