@@ -15,7 +15,7 @@ interface ICard {
 
 export const Card: React.FC<ICard> = ({ image, title, text, button }) => {
 	const hasButton = Boolean(button);
-	// max-[1257px]:flex-wrap
+
 	return (
 		<div className="flex flex-wrap justify-center items-center mx-16 py-28 max-[1257px]:py-8">
 			<ImageRenderer customImage={image} />
