@@ -7,6 +7,7 @@ import strings from "../../../strings";
 export const ImageRenderer: React.FC<{ customImage?: Image }> = ({
 	customImage,
 }) => {
+// Desestruturar 
 	const url = customImage?.url;
 	const alt = customImage?.alt;
 
