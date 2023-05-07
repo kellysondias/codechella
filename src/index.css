@@ -16,15 +16,15 @@
 @tailwind components;
 @layer components {
 	.card-text {
-		@apply flex flex-col items-center justify-center text-center text-summer-gray mx-5 dark:text-white md:mx-20 lg:mx-0 lg:ml-10 
+		@apply flex flex-col items-center justify-center text-center text-summer-gray mx-5 dark:text-white md:mx-20 lg:mx-0 lg:ml-10;
 	}
 
 	.rendered-image {
-		@apply  w-80 h-96 bg-cover bg-center bg-no-repeat rounded-lg md:w-100 max-[346px]:w-56
+		@apply w-80 h-96 bg-cover bg-center bg-no-repeat rounded-lg md:w-100 max-[346px]:w-56;
 	}
-	
+
 	.rendered-default-image {
-		@apply rendered-image bg-summer-card dark:bg-boreal-card
+		@apply rendered-image bg-summer-card dark:bg-boreal-card;
 	}
 }
 
@@ -39,6 +39,10 @@
 	}
 
 	.align-rendered-image {
-		@apply flex flex-col items-center
+		@apply flex flex-col items-center;
+	}
+
+	.flex-center {
+		@apply flex justify-center items-center;
 	}
 }

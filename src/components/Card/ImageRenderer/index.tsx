@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Image } from "../../../Types/Image";
+import type { Image } from "../../../Types/Image";
 
 import strings from "../../../strings";
 
