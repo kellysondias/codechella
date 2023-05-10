@@ -14,8 +14,8 @@ interface ILineUpSection {
 
 export const LineUpSection: React.FC<ILineUpSection> = ({ date, lists }) => {
 	return (
-		<div>
-			<h3 className="font-bold">{date}</h3>
+		<div className="text-center">
+			<h3 className="line-up-header">{date}</h3>
 			<LineUpList list={lists} />
 		</div>
 	);

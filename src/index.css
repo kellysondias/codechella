@@ -3,7 +3,8 @@
 @tailwind base;
 @layer base {
 	h1,
-	h2 {
+	h2,
+	h3 {
 		@apply font-title;
 	}
 
@@ -15,8 +16,20 @@
 
 @tailwind components;
 @layer components {
+	.button {
+		@apply flex-center w-full text-white rounded-2xl font-text py-4 px-11 my-6 shadow-xl shadow-black-100 bg-summer-blue-100 dark:bg-boreal-blue-100 text-sm sm:text-xl sm:text-center md:w-auto md:px-5;
+	}
+
+	.menu-item {
+		@apply w-full border-b-2 border-white pb-2 mb-3 last:border-none last:mb-0 last:pb-0 sm:w-auto sm:border-none sm:pb-0 sm:mb-0
+	}
+
 	.card-text {
 		@apply flex flex-col items-center justify-center text-center text-summer-gray mx-5 dark:text-white md:mx-20 lg:mx-0 lg:ml-10;
+	}
+
+	.line-up-header {
+		@apply inline-block text-3xl text-white p-4 bg-summer-mustard dark:bg-boreal-green;
 	}
 
 	.rendered-image {
@@ -25,6 +38,10 @@
 
 	.rendered-default-image {
 		@apply rendered-image bg-summer-card dark:bg-boreal-card;
+	}
+
+	.row-container {
+		@apply my-5 mb-9 flex-center flex-wrap font-bold leading-snug first-rows-size last-rows-size;
 	}
 }
 
@@ -44,5 +61,13 @@
 
 	.flex-center {
 		@apply flex justify-center items-center;
+	}
+
+	.last-rows-size {
+		@apply [&:nth-child(2)]:text-3xl last:font-normal last:text-3xl last:w-3/4 sm:last:w-full md:[&:nth-child(2)]:w-4/5 md:last:w-4/5 lg:[&:nth-child(2)]:text-[2rem] lg:[&:nth-child(2)]:w-full lg:last:text-[2rem];
+	}
+
+	.first-rows-size {
+		@apply first:text-4xl first:w-3/4 md:first:w-full lg:first:text-[2.5rem] 
 	}
 }

@@ -6,7 +6,7 @@ export const RowItem: React.FC<{ row: string[] }> = ({ row }) => {
 			{row.map((item, index) => (
 				<li
 					key={index}
-					className="mx-5"
+					className="text-center mb-4 mx-5"
 				>
 					{item}
 				</li>

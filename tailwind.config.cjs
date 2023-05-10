@@ -15,6 +15,7 @@ module.exports = {
 						300: "#facf9d",
 					},
 					gray: "#444444",
+					mustard: "#df9010",
 				},
 				boreal: {
 					blue: {
@@ -26,6 +27,7 @@ module.exports = {
 						300: "#b6bcff",
 					},
 					hero: "#ffffff",
+					green: "#008364",
 				},
 			},
 			fontFamily: {

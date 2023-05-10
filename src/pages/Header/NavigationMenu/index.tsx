@@ -2,10 +2,9 @@ import React, { useState, useEffect } from "react";
 
 import strings from "../../../strings";
 
-import { List } from "../List";
-import { ListItem } from "../ListItem";
-import { StyledNav } from "../StyledNav";
-import { MobileMenu } from "../MobileMenu";
+import { List } from "./List";
+import { StyledNav } from "./StyledNav";
+import { MobileMenu } from "./MobileMenu";
 
 export const NavigationMenu: React.FC = () => {
 	const navStrings = strings.pages.header.navigationMenu;
@@ -40,13 +39,12 @@ export const NavigationMenu: React.FC = () => {
 			>
 				<List isActive={isActive}>
 					{navStrings.map((text, index) => (
-						<ListItem
-							index={index}
-							list={navStrings}
-							key={text}
+						<li
+							key={index}
+							className="menu-item"
 						>
 							{text}
-						</ListItem>
+						</li>
 					))}
 				</List>
 			</StyledNav>

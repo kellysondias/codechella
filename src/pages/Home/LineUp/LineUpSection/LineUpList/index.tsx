@@ -1,6 +1,6 @@
 import React from "react";
-import { RowContainer } from "./RowContainer";
 
+import { RowContainer } from "./RowContainer";
 import { RowItem } from "./RowItem";
 
 interface ILineUpList {
@@ -16,9 +16,9 @@ export const LineUpList: React.FC<ILineUpList> = ({ list }) => {
 	const { row1, row2, row3, row4 } = list;
 
 	return (
-		<div>
-			<strong>{row1}</strong>
-			<div className="text-center">
+		<div className="flex-center flex-col">
+			<strong className="text-5xl mt-12 mb-8 leading-snug">{row1}</strong>
+			<div className="flex-center flex-wrap text-center md:flex-col md:w-full">
 				<RowContainer>
 					<RowItem row={row2} />
 				</RowContainer>
