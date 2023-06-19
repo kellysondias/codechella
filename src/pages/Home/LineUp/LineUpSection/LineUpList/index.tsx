@@ -4,7 +4,7 @@ import { RowContainer } from "./RowContainer";
 import { RowItem } from "./RowItem";
 
 interface ILineUpList {
-	list: {
+	lists: {
 		row1: string;
 		row2: string[];
 		row3: string[];
@@ -12,11 +12,11 @@ interface ILineUpList {
 	};
 }
 
-export const LineUpList: React.FC<ILineUpList> = ({ list }) => {
-	const { row1, row2, row3, row4 } = list;
+export const LineUpList: React.FC<ILineUpList> = ({ lists }) => {
+	const { row1, row2, row3, row4 } = lists;
 
 	return (
-		<div className="flex-center flex-col">
+		<div lang="en" className="flex-center flex-col">
 			<strong className="text-5xl mt-12 mb-8 leading-snug">{row1}</strong>
 			<div className="flex-center flex-wrap text-center md:flex-col md:w-full">
 				<RowContainer>

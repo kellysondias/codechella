@@ -1,6 +1,7 @@
 import React from "react";
 import strings from "../../../strings";
 import { LineUpSection } from "./LineUpSection";
+import { LineUpFooter } from "./LineUpFooter";
 
 export const LineUp: React.FC = () => {
 	const lineUpStrings = {
@@ -22,6 +23,7 @@ export const LineUp: React.FC = () => {
 				date={lineUpStrings.dates.secondDate}
 				lists={lineUpStrings.secondList}
 			/>
+			<LineUpFooter />
 		</section>
 	);
 };
