@@ -2,14 +2,16 @@ import React from "react";
 
 import Header from "./pages/Header";
 import Home from "./pages/Home";
+import Footer from "./pages/Footer";
 
 const App: React.FC = () => {
-	return (
-		<>
-			<Header />
-			<Home />
-		</>
-	);
+  return (
+    <>
+      <Header />
+      <Home />
+      <Footer />
+    </>
+  );
 };
 
 export default App;

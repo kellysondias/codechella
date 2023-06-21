@@ -59,6 +59,14 @@
     width: 38rem;
   }
 
+  .w-footer-logo {
+    width: 14.619rem;
+  }
+
+  .hover {
+    @apply transition ease-out hover:text-summer-mustard dark:hover:text-boreal-gradient-300
+  }
+
   .align-rendered-image {
     @apply flex flex-col items-center;
   }
