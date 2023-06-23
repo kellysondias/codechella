@@ -1,10 +1,9 @@
 import React from "react";
-import strings from "../../../strings";
+import content from "../../../content";
 import isMobile from "../../../services/functions/isMobile";
 
 export const FooterCredits: React.FC = () => {
-  const url = strings.pages.footer.credits.url;
-  const text = strings.pages.footer.credits.text;
+  const { url, text } = content.pages.footer.credits;
 
   return (
     <div>

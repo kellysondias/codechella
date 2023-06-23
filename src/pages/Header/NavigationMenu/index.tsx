@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from "react";
 
-import strings from "../../../strings";
+import content from "../../../content";
 
 import { List } from "./List";
 import { StyledNav } from "./StyledNav";
 import { MobileMenu } from "./MobileMenu";
 
 export const NavigationMenu: React.FC = () => {
-  const navStrings = strings.pages.header.navigationMenu;
+  const navMenu = content.pages.header.navigationMenu;
 
   const [isActive, setIsActive] = useState(false);
   const [isHidden, setIsHidden] = useState(true);
 
   const doc = document.getElementById("doc");
-  const pageClasses = doc!.classList;
+  const docClasses = doc!.classList;
 
   const handleMenu = () => {
     setIsActive(!isActive);
@@ -22,9 +22,9 @@ export const NavigationMenu: React.FC = () => {
   useEffect(() => {
     if (isActive) {
       setIsHidden(false);
-      pageClasses.add("overflow-hidden");
+      docClasses.add("overflow-hidden");
     } else {
-      pageClasses.remove("overflow-hidden");
+      docClasses.remove("overflow-hidden");
       const timeoutId = setTimeout(() => {
         setIsHidden(true);
       }, 400);
@@ -37,7 +37,7 @@ export const NavigationMenu: React.FC = () => {
       <MobileMenu isActive={isActive} onClick={handleMenu} />
       <StyledNav isActive={isActive} isHidden={isHidden}>
         <List isActive={isActive}>
-          {navStrings.map((text, index) => (
+          {navMenu.map((text, index) => (
             <li key={index} className="menu-item">
               {text}
             </li>

@@ -5,7 +5,7 @@ import {
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 
-const strings = {
+const content = {
   components: {
     logo: {
       logoAlt: "Logo do Codechella",
@@ -104,4 +104,4 @@ const strings = {
   },
 };
 
-export default strings;
+export default content;
