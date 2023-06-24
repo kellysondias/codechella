@@ -17,7 +17,7 @@ export const Card: React.FC<ICard> = ({ image, title, text, button }) => {
 	const hasButton = Boolean(button);
 
 	return (
-		<div className="flex flex-wrap justify-center items-center mx-16 py-28 max-[1257px]:py-8">
+		<div className="flex flex-wrap justify-center items-center mx-16 py-20 max-[1257px]:py-8">
 			<ImageRenderer customImage={image} />
 			<div className="card-text lg:w-[40%]">
 				<h2 className="text-3xl my-6 md:mx-20 lg:mx-0">{title}</h2>
