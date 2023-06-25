@@ -1,6 +1,6 @@
 import React from "react";
 import content from "../../../content";
-import isMobile from "../../../services/functions/isMobile";
+import isMobile from "../../../services/functions/isDesktop";
 
 export const FooterCredits: React.FC = () => {
   const { url, text } = content.pages.footer.credits;
