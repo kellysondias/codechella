@@ -1,0 +1,18 @@
+[
+  {
+    "label": "A experiência",
+    "to": "/experiencia"
+  },
+  {
+    "label": "Mapa de Setores",
+    "to": "/mapa-de-setores"
+  },
+  {
+    "label": "Informações",
+    "to": "/informacoes"
+  },
+  {
+    "label": "Ingresso",
+    "to": "/ingresso"
+  }
+]

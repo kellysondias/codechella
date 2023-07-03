@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import content from "../../../content";
+import routes from "./routes.json";
 
 import { List } from "./List";
 import { StyledNav } from "./StyledNav";
@@ -37,9 +39,11 @@ export const NavigationMenu: React.FC = () => {
       <MobileMenu isActive={isActive} onClick={handleMenu} />
       <StyledNav isActive={isActive} isHidden={isHidden}>
         <List isActive={isActive}>
-          {navMenu.map((text, index) => (
+          {routes.map((route, index) => (
             <li key={index} className="menu-item">
-              {text}
+              <Link to={route.to} onClick={() => setIsActive(false)}>
+                {route.label}
+              </Link>
             </li>
           ))}
         </List>
