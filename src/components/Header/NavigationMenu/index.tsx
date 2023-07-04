@@ -9,17 +9,16 @@ export const NavigationMenu: React.FC = () => {
   const [isActive, setIsActive] = useState(false);
   const [isHidden, setIsHidden] = useState(true);
 
-  const root = document.getElementById("root");
-  const rootClasses = root!.classList;
+  const bodyClasses = document.body.classList;
 
   const handleMenu = () => setIsActive(!isActive);
 
   useEffect(() => {
     if (isActive) {
       setIsHidden(false);
-      rootClasses.add("overflow-hidden");
+      bodyClasses.add("overflow-y-hidden");
     } else {
-      rootClasses.remove("overflow-hidden");
+      bodyClasses.remove("overflow-y-hidden");
       const timeoutId = setTimeout(() => {
         setIsHidden(true);
       }, 400);

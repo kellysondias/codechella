@@ -24,6 +24,10 @@
     @apply w-full border-b-2 border-white pb-2 mb-3 last:border-none last:mb-0 last:pb-0 sm:w-auto sm:border-none sm:pb-0 sm:mb-0;
   }
 
+  .menu-nav {
+    @apply absolute text-white inline-block w-full h-full inset-0 justify-center items-center bg-summer-blue-100/10 dark:bg-boreal-blue-100/10 font-bold sm:block sm:static sm:bg-transparent sm:before:hidden sm:animate-none
+  }
+
   .card-text {
     @apply flex flex-col items-center justify-center text-center text-summer-gray mx-5 dark:text-white md:mx-20 lg:mx-0 lg:ml-10;
   }
@@ -64,7 +68,7 @@
   }
 
   .hover {
-    @apply transition ease-out hover:text-summer-mustard dark:hover:text-boreal-gradient-300
+    @apply transition ease-out hover:text-summer-mustard dark:hover:text-boreal-gradient-300;
   }
 
   .align-rendered-image {
