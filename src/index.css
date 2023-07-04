@@ -25,7 +25,7 @@
   }
 
   .menu-nav {
-    @apply absolute text-white inline-block w-full h-full inset-0 justify-center items-center bg-summer-blue-100/10 dark:bg-boreal-blue-100/10 font-bold sm:block sm:static sm:bg-transparent sm:before:hidden sm:animate-none
+    @apply absolute text-white inline-block w-full h-full inset-0 justify-center items-center bg-summer-blue-100/10 dark:bg-boreal-blue-100/10 font-bold sm:block sm:static sm:bg-transparent sm:before:hidden sm:animate-none;
   }
 
   .card-text {
@@ -65,6 +65,11 @@
 
   .w-footer-logo {
     width: 14.619rem;
+  }
+
+  .stop-scrolling {
+    height: 100%;
+    overflow: hidden;
   }
 
   .hover {

@@ -4,21 +4,21 @@ import { List } from "./List";
 import { StyledNav } from "./StyledNav";
 import { MobileMenu } from "./MobileMenu";
 import routes from "./routes.json";
+import ScrollHandler from "./ScrollHandler";
 
 export const NavigationMenu: React.FC = () => {
   const [isActive, setIsActive] = useState(false);
   const [isHidden, setIsHidden] = useState(true);
 
-  const bodyClasses = document.body.classList;
-
   const handleMenu = () => setIsActive(!isActive);
+  const handleScroll = new ScrollHandler();
 
   useEffect(() => {
     if (isActive) {
       setIsHidden(false);
-      bodyClasses.add("overflow-y-hidden");
+      handleScroll.disable();
     } else {
-      bodyClasses.remove("overflow-y-hidden");
+      handleScroll.enable();
       const timeoutId = setTimeout(() => {
         setIsHidden(true);
       }, 400);
@@ -29,8 +29,8 @@ export const NavigationMenu: React.FC = () => {
   return (
     <div className="flex">
       <MobileMenu isActive={isActive} onClick={handleMenu} />
-        <StyledNav isActive={isActive} isHidden={isHidden}>
-          <List isActive={isActive}>
+      <StyledNav isActive={isActive} isHidden={isHidden}>
+        <List isActive={isActive}>
           {routes.map((route, index) => (
             <li key={index} className="menu-item">
               <a href={route.to} onClick={() => setIsActive(false)}>
@@ -38,8 +38,8 @@ export const NavigationMenu: React.FC = () => {
               </a>
             </li>
           ))}
-          </List>
-        </StyledNav>
+        </List>
+      </StyledNav>
     </div>
   );
 };
