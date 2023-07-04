@@ -28,6 +28,10 @@
     @apply absolute text-white inline-block w-full h-full inset-0 justify-center items-center bg-summer-blue-100/10 dark:bg-boreal-blue-100/10 font-bold sm:block sm:static sm:bg-transparent sm:before:hidden sm:animate-none;
   }
 
+  .menu-list {
+    @apply flex flex-col absolute bg-summer-blue-100 dark:bg-boreal-blue-100 text-center top-40 justify-center items-center rounded-md p-5 opacity-100  sm:animate-none sm:static sm:bg-transparent sm:flex-row sm:space-x-10 md:mb-0 md:space-x-4 lg:space-x-10
+  }
+
   .card-text {
     @apply flex flex-col items-center justify-center text-center text-summer-gray mx-5 dark:text-white md:mx-20 lg:mx-0 lg:ml-10;
   }
@@ -65,11 +69,6 @@
 
   .w-footer-logo {
     width: 14.619rem;
-  }
-
-  .stop-scrolling {
-    height: 100%;
-    overflow: hidden;
   }
 
   .hover {

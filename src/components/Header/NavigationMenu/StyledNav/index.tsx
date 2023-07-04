@@ -11,9 +11,9 @@ export const StyledNav: React.FC<StyledNavProps> = ({
   isHidden,
   children,
 }) => {
-  const menuAnimation = isActive
+  const navAnimation = isActive
     ? "flex"
     : `flex animate-back-out ${isHidden && "hidden"}`;
 
-  return <nav className={`${menuAnimation} menu-nav`}>{children}</nav>;
+  return <nav className={`${navAnimation} menu-nav`}>{children}</nav>;
 };
