@@ -3,25 +3,19 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 
 interface MobileMenuProps {
-	onClick: () => void;
-	isActive: boolean;
+  onClick: () => void;
+  isActive: boolean;
 }
 
 export const MobileMenu: React.FC<MobileMenuProps> = ({
-	onClick,
-	isActive,
+  onClick,
+  isActive,
 }) => (
-	<div className="z-50 cursor-pointer text-white text-3xl sm:hidden">
-		{isActive ? (
-			<FontAwesomeIcon
-				icon={faX}
-				onClick={onClick}
-			/>
-		) : (
-			<FontAwesomeIcon
-				icon={faBars}
-				onClick={onClick}
-			/>
-		)}
-	</div>
+  <div className="z-50 cursor-pointer text-white text-3xl sm:hidden w-10 h-10">
+    {isActive ? (
+      <FontAwesomeIcon icon={faX} onClick={onClick} />
+    ) : (
+      <FontAwesomeIcon icon={faBars} onClick={onClick} />
+    )}
+  </div>
 );

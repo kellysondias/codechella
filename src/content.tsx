@@ -20,14 +20,6 @@ const content = {
     },
   },
   pages: {
-    header: {
-      navigationMenu: [
-        "A experiência",
-        "Mapa de Setores",
-        "Informações",
-        "Ingresso",
-      ],
-    },
     home: {
       hero: {
         line1: "Boas-vindas ao",
