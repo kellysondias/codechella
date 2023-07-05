@@ -59,7 +59,7 @@ module.exports = {
         },
       },
       animation: {
-        "back-out": "backOut_kf 0.50s ",
+        "back-out": "backOut_kf 0.50s",
         "back-in-down": "backInDown_kf 0.50s",
         "back-out-up": "backOutUp_kf 0.40s",
       },

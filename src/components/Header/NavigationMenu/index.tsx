@@ -6,8 +6,6 @@ import { MobileMenu } from "./MobileMenu";
 import routes from "./routes.json";
 import ScrollHandler from "./ScrollHandler";
 
-// Trocar isHidden
-
 export const NavigationMenu: React.FC = () => {
   const [isActive, setIsActive] = useState(false);
   const [isHidden, setIsHidden] = useState(true);
@@ -21,6 +19,7 @@ export const NavigationMenu: React.FC = () => {
       handleScroll.disable();
     } else {
       handleScroll.enable();
+
       const timeoutId = setTimeout(() => {
         setIsHidden(true);
       }, 400);
