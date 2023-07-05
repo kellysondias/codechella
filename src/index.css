@@ -29,7 +29,7 @@
   }
 
   .menu-list {
-    @apply flex flex-col absolute bg-summer-blue-100 dark:bg-boreal-blue-100 text-center top-40 justify-center items-center rounded-md p-5 opacity-100  sm:animate-none sm:static sm:bg-transparent sm:flex-row sm:space-x-10 md:mb-0 md:space-x-4 lg:space-x-10
+    @apply flex flex-col absolute bg-summer-blue-100 dark:bg-boreal-blue-100 text-center top-40 justify-center items-center rounded-md p-5 opacity-100  sm:animate-none sm:static sm:bg-transparent sm:flex-row sm:space-x-10 md:mb-0 md:space-x-4 lg:space-x-10;
   }
 
   .card-text {
@@ -55,6 +55,14 @@
   .row-container {
     @apply my-5 mb-9 flex-center flex-wrap font-bold leading-snug first-rows-size last-rows-size;
   }
+
+  .scroll-bar::-webkit-scrollbar {
+    width: 1em;
+  }
+
+  .scroll-bar::-webkit-scrollbar-thumb {
+    @apply bg-summer-scrollbar-100 hover:bg-summer-scrollbar-200;
+  }
 }
 
 @tailwind utilities;
@@ -69,6 +77,10 @@
 
   .w-footer-logo {
     width: 14.619rem;
+  }
+
+  .bg-gradient {
+    @apply bg-gradient-to-b from-summer-gradient-100 via-summer-gradient-200 to-summer-gradient-300 dark:bg-gradient-to-b dark:from-boreal-gradient-100 dark:via-boreal-gradient-200 dark:to-boreal-gradient-300;
   }
 
   .hover {
@@ -89,5 +101,9 @@
 
   .first-rows-size {
     @apply first:text-4xl first:w-3/4 md:first:w-full lg:first:text-[2.5rem];
+  }
+
+  .disabled-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-summer-scrollbar-100/60 hover:bg-summer-scrollbar-100/60;
   }
 }

@@ -14,6 +14,10 @@ module.exports = {
             200: "#fbf0dd",
             300: "#facf9d",
           },
+          scrollbar: {
+            100: "#2e70a8",
+            200: "#2e4ca8",
+          },
           "footer-bg": "#facf9d",
           gray: "#444444",
           mustard: "#df9010",

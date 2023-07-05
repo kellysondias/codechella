@@ -5,7 +5,7 @@ export default class ScrollHandler {
 
   disable = () => {
     const scrollTop = document.documentElement.scrollTop;
-    return this.#setPosition(() => window.scrollTo(0, scrollTop));
+    return this.#setPosition(() => window.scrollTo(0, scrollTop))
   };
 
   enable = () => {
