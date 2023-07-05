@@ -55,14 +55,6 @@
   .row-container {
     @apply my-5 mb-9 flex-center flex-wrap font-bold leading-snug first-rows-size last-rows-size;
   }
-
-  .scroll-bar::-webkit-scrollbar {
-    width: 1em;
-  }
-
-  .scroll-bar::-webkit-scrollbar-thumb {
-    @apply bg-summer-scrollbar-100 hover:bg-summer-scrollbar-200;
-  }
 }
 
 @tailwind utilities;
@@ -101,6 +93,14 @@
 
   .first-rows-size {
     @apply first:text-4xl first:w-3/4 md:first:w-full lg:first:text-[2.5rem];
+  }
+
+  .scroll-bar::-webkit-scrollbar {
+    width: 1.3em;
+  }
+
+  .scroll-bar::-webkit-scrollbar-thumb {
+    @apply bg-summer-scrollbar-100 hover:bg-summer-scrollbar-200;
   }
 
   .disabled-scrollbar::-webkit-scrollbar-thumb {
