@@ -17,10 +17,8 @@ export const NavigationMenu: React.FC = () => {
     if (isActive) {
       setIsHidden(false);
       handleScroll.disable();
-      document.body.classList.add("disabled-scrollbar")
     } else {
       handleScroll.enable();
-      document.body.classList.remove("disabled-scrollbar")
 
       const timeoutId = setTimeout(() => {
         setIsHidden(true);

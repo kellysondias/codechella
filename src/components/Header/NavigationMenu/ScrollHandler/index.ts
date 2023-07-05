@@ -5,10 +5,16 @@ export default class ScrollHandler {
 
   disable = () => {
     const scrollTop = document.documentElement.scrollTop;
-    return this.#setPosition(() => window.scrollTo(0, scrollTop))
+    const isDisabled = Boolean(this.#setPosition(() => window.scrollTo(0, scrollTop)))
+    const bgDisabled = document.body.classList.add("disabled-scrollbar")
+
+    return isDisabled && bgDisabled
   };
 
   enable = () => {
-    return this.#setPosition(() => null);
+    const isEnabled = Boolean(this.#setPosition(() => null))
+    const bgEnabled = document.body.classList.remove("disabled-scrollbar")
+
+    return isEnabled && bgEnabled;
   };
 }
