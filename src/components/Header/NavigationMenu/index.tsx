@@ -9,8 +9,6 @@ import ScrollHandler from "./ScrollHandler";
 export const NavigationMenu: React.FC = () => {
   const [isActive, setIsActive] = useState(false);
   const [isHidden, setIsHidden] = useState(true);
-
-  const handleMenu = () => setIsActive(!isActive);
   const handleScroll = new ScrollHandler();
 
   useEffect(() => {
@@ -29,7 +27,7 @@ export const NavigationMenu: React.FC = () => {
 
   return (
     <div className="flex">
-      <MobileMenu isActive={isActive} onClick={handleMenu} />
+      <MobileMenu isActive={isActive} onClick={() => setIsActive(!isActive)} />
       <StyledNav isActive={isActive} isHidden={isHidden}>
         <List isActive={isActive}>
           {routes.map((route, index) => (
