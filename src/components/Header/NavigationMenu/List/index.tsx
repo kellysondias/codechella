@@ -1,14 +1,14 @@
 import React from "react";
 
-interface ListProps {
+interface Props {
   isActive: boolean;
   children: React.ReactNode;
 }
 
-export const List: React.FC<ListProps> = ({ isActive, children }) => {
+export const List: React.FC<Props> = ({ isActive, children }) => {
   const listAnimation = isActive
     ? "animate-back-in-down"
     : "animate-back-out-up";
 
-  return <ul className={`${listAnimation} menu-list`}>{children}</ul>;
+  return <ul className={`menu-list ${listAnimation} sm:animate-none`}>{children}</ul>;
 };

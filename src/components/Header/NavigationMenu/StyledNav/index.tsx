@@ -1,12 +1,12 @@
 import React from "react";
 
-interface StyledNavProps {
+interface Props {
   isActive: boolean;
   isHidden: boolean;
   children: React.ReactNode;
 }
 
-export const StyledNav: React.FC<StyledNavProps> = ({
+export const StyledNav: React.FC<Props> = ({
   isActive,
   isHidden,
   children,
@@ -15,5 +15,5 @@ export const StyledNav: React.FC<StyledNavProps> = ({
     ? "flex"
     : `flex animate-back-out ${isHidden && "hidden"}`;
 
-  return <nav className={`${navAnimation} menu-nav`}>{children}</nav>;
+  return <nav className={`menu-nav ${navAnimation} sm:flex sm:animate-none`}>{children}</nav>;
 };

@@ -2,12 +2,12 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 
-interface MobileMenuProps {
+interface Props {
   onClick: () => void;
   isActive: boolean;
 }
 
-export const MobileMenu: React.FC<MobileMenuProps> = ({
+export const MobileMenu: React.FC<Props> = ({
   onClick,
   isActive,
 }) => (
