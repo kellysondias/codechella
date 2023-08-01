@@ -1,5 +1,4 @@
 import React from "react";
-
 import { LineUpList } from "./LineUpList";
 import { LineUpHeader } from "./LineUpHeader";
 
