@@ -10,5 +10,7 @@ export const List: React.FC<Props> = ({ isActive, children }) => {
     ? "animate-back-in-down"
     : "animate-back-out-up";
 
-  return <ul className={`menu-list ${listAnimation} sm:animate-none`}>{children}</ul>;
+  return (
+    <ul className={`menu-list ${listAnimation} sm:animate-none`}>{children}</ul>
+  );
 };

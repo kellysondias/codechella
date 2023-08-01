@@ -1,18 +1,15 @@
 import React from "react";
-
 import type { Image } from "../../../Types/Image";
-
-import content from "../../../content";
+import alts from "./alts.json";
 
 export const ImageRenderer: React.FC<{ customImage?: Image }> = ({
   customImage,
 }) => {
   const { url, alt } = customImage ?? {};
-  const { summerAlt, borealAlt } = content.components.card.imageRenderer;
+  const { summerAlt, borealAlt } = alts;
 
   const hasCustomImage = Boolean(customImage);
   const hasAlt = Boolean(alt);
-  console.log(alt);
 
   return (
     <div className="flex justify-center h-full">
@@ -20,7 +17,7 @@ export const ImageRenderer: React.FC<{ customImage?: Image }> = ({
         <div className="align-rendered-image">
           <div
             style={{ backgroundImage: `url(${url})` }}
-            className="rendered-image"
+            className="align-rendered-image"
           />
           {hasAlt && <span className="sr-only">{alt}</span>}
         </div>

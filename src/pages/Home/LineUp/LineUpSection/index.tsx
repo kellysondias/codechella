@@ -3,7 +3,7 @@ import React from "react";
 import { LineUpList } from "./LineUpList";
 import { LineUpHeader } from "./LineUpHeader";
 
-interface ILineUpSection {
+interface Props {
   date: string;
   lists: {
     row1: string;
@@ -13,7 +13,7 @@ interface ILineUpSection {
   };
 }
 
-export const LineUpSection: React.FC<ILineUpSection> = ({ date, lists }) => {
+export const LineUpSection: React.FC<Props> = ({ date, lists }) => {
   return (
     <div className="text-center">
       <LineUpHeader date={date} />

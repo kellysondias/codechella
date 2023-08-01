@@ -1,12 +1,10 @@
 import React from "react";
-
 import { Card } from "../../../components/Card";
 import { faTicket } from "@fortawesome/free-solid-svg-icons";
-
-import content from "../../../content";
+import text from "./text.json";
 
 export const Date: React.FC = () => {
-  const { title, text, button: buttonText } = content.pages.home.dates;
+  const { title, text: dateText, button: buttonText } = text;
 
   const ticketButton = {
     children: buttonText,
@@ -15,7 +13,7 @@ export const Date: React.FC = () => {
 
   return (
     <div className="text-center">
-      <Card button={ticketButton} title={title} text={text} />
+      <Card button={ticketButton} title={title} text={dateText} />
     </div>
   );
 };

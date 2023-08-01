@@ -3,19 +3,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconDefinition } from "@fortawesome/fontawesome-common-types";
 import isDesktop from "../../../../services/functions/isDesktop";
 
-interface IFooterListItem {
+interface Props {
   url: string;
   icon: IconDefinition;
-  key: number;
 }
 
-export const FooterListItem: React.FC<IFooterListItem> = ({
-  url,
-  icon,
-  key,
-}) => {
+export const FooterListItem: React.FC<Props> = ({ url, icon }) => {
   return (
-    <li key={key}>
+    <li>
       <a href={url} target="_blank" className={`${isDesktop && "hover"}`}>
         <FontAwesomeIcon icon={icon} className="text-xl" />
       </a>

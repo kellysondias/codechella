@@ -96,7 +96,7 @@
   }
 
   .scroll-bar::-webkit-scrollbar {
-    @apply w-[1.3em]
+    @apply w-[1.3em];
   }
 
   .scroll-bar::-webkit-scrollbar-thumb {

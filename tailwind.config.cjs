@@ -74,6 +74,8 @@ module.exports = {
         "boreal-card": "url('/assets/img/boreal/boreal-1.jpeg')",
         "summer-footer": "url('/assets/img/summer/summer-footer.jpg')",
         "boreal-footer": "url('/assets/img/boreal/boreal-footer.jpg')",
+        "black-logo": "url('/assets/img/logos/black-logo.svg')",
+        "white-logo": "url('/assets/img/logos/white-logo.svg')",
       },
     },
   },

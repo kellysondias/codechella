@@ -14,9 +14,7 @@ export const ThemeToggleButton: React.FC = () => {
     systemPreference && rootClasses.add("dark");
   }, []);
 
-  const toggle = () => {
-    rootClasses.toggle("dark");
-  };
+  const toggle = () => rootClasses.toggle("dark");
 
   return (
     <div className="text-center hidden absolute md:static right-5 top-5 md sm:block">

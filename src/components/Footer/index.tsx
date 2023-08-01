@@ -1,14 +1,14 @@
 import React from "react";
-import { FooterLogo } from "./FooterLogo";
 import { FooterLinks } from "./FooterLinks";
 import { FooterCredits } from "./FooterCredits";
+import { Logo } from "../Logo";
 
-const Footer: React.FC = () => {
+export const Footer: React.FC = () => {
   return (
-    <footer className="p-6 bg-summer-footer-bg dark:bg-boreal-footer-bg lg:px-14">
+    <footer className="p-6 bg-summer-footer-bg dark:bg-boreal-footer-bg dark:text-white lg:px-14">
       <div className="flex-center flex-col lg:flex-row lg:justify-between">
         <div className="flex-center flex-col lg:items-start">
-          <FooterLogo />
+          <Logo isFooterLogo />
           <FooterLinks />
         </div>
         <FooterCredits />
@@ -16,5 +16,3 @@ const Footer: React.FC = () => {
     </footer>
   );
 };
-
-export default Footer;

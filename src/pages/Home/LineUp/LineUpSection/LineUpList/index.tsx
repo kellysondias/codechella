@@ -3,7 +3,7 @@ import React from "react";
 import { RowContainer } from "./RowContainer";
 import { RowItem } from "./RowItem";
 
-interface ILineUpList {
+interface Props {
 	lists: {
 		row1: string;
 		row2: string[];
@@ -12,7 +12,7 @@ interface ILineUpList {
 	};
 }
 
-export const LineUpList: React.FC<ILineUpList> = ({ lists }) => {
+export const LineUpList: React.FC<Props> = ({ lists }) => {
 	const { row1, row2, row3, row4 } = lists;
 
 	return (

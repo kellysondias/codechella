@@ -6,14 +6,14 @@ import { ImageRenderer } from "./ImageRenderer";
 import type { Image } from "../../Types/Image";
 import type { ButtonComponent } from "../../Types/ButtonComponent";
 
-interface ICard {
+interface Props {
 	image?: Image;
 	title: string;
 	text: string;
 	button?: ButtonComponent;
 }
 
-export const Card: React.FC<ICard> = ({ image, title, text, button }) => {
+export const Card: React.FC<Props> = ({ image, title, text, button }) => {
 	const hasButton = Boolean(button);
 
 	return (

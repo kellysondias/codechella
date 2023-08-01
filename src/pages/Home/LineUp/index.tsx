@@ -1,10 +1,10 @@
 import React from "react";
-import content from "../../../content";
+import text from "./text.json";
 import { LineUpSection } from "./LineUpSection";
 import { LineUpFooter } from "./LineUpFooter";
 
 export const LineUp: React.FC = () => {
-  const { heading, dates, lineUpCard: rows } = content.pages.home.lineUp;
+  const { heading, dates, lineUpCard: rows } = text;
 
   return (
     <section className="flex flex-col justify-center items-center text-center text-summer-gray dark:text-white">

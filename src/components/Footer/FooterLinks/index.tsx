@@ -1,9 +1,9 @@
 import React from "react";
-import content from "../../../content";
+import data from "./data";
 import { FooterList } from "./FooterList";
 
 export const FooterLinks: React.FC = () => {
-  const { heading, socialMediaArr } = content.pages.footer.footerLinks;
+  const { heading, socialMediaArr } = data;
 
   return (
     <div className="flex-wrap md:flex md:mb-8">

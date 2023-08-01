@@ -1,20 +1,20 @@
 import React from "react";
-import content from "../../../content";
+import text from "./text.json";
 import isDesktop from "../../../services/functions/isDesktop";
 
 export const FooterCredits: React.FC = () => {
-  const { url, text } = content.pages.footer.credits;
+  const { url, text: creditsText } = text;
 
   return (
     <div>
       <p className="text-center text-xl flex-col lg:flex lg:text-left">
-        <div>
-          <span>{text.line1}</span>
+        <span className="block">
+          <span>{creditsText.line1}</span>
           <a href={url} target="_blank" className={`${isDesktop && "hover"}`}>
-            <span>{text.dev}</span>
+            <span>{creditsText.dev}</span>
           </a>
-        </div>
-        <span>{text.line2}</span>
+        </span>
+        <span>{creditsText.line2}</span>
       </p>
     </div>
   );
