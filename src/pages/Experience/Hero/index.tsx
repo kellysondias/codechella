@@ -4,10 +4,9 @@ import bannerText from "./banner-text.json";
 
 export const Hero: React.FC = () => (
   <Banner
-    text={bannerText.line1}
-    bottomText={bannerText.line2}
+    background=""
+    text={bannerText.text}
     blur="bg-white"
-    background="bg-summer-banner"
-    borealBackground="bg-boreal-banner"
+    borealBlur="bg-black"
   />
 );

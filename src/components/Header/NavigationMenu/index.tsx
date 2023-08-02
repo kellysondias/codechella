@@ -32,9 +32,9 @@ export const NavigationMenu: React.FC = () => {
         <List isActive={isActive}>
           {routes.map((route, index) => (
             <li key={index} className="menu-item">
-              <a href={route.to} onClick={() => setIsActive(false)}>
+              <Link to={route.to} onClick={() => setIsActive(false)}>
                 {route.label}
-              </a>
+              </Link>
             </li>
           ))}
         </List>
