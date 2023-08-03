@@ -34,7 +34,7 @@ export const Banner: React.FC<Props> = ({
         className={`flex justify-center flex-col text-center text-3xl text-summer-gray w-full h-full dark:text-boreal-hero sm:text-6xl ${blur}/25 ${borealBl}`}
       >
         <span className="sm:mb-4">{text}</span>
-        <span>{bottomText}</span>
+        {bottomText && <span>{bottomText}</span>}
       </h2>
     </div>
   );

@@ -13,7 +13,11 @@ export const Date: React.FC = () => {
 
   return (
     <div className="text-center">
-      <Card button={ticketButton} title={title} text={dateText} />
+      <Card
+        button={ticketButton}
+        title={title}
+        text={dateText}
+      />
     </div>
   );
 };

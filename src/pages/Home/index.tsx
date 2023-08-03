@@ -4,7 +4,7 @@ import { LineUp } from "./LineUp";
 import { Hero } from "./Hero";
 
 const Home: React.FC = () => (
-  <section className="bg-gradient">
+  <section className="">
     <Hero />
     <Date />
     <LineUp />

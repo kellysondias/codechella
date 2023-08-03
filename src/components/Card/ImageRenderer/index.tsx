@@ -17,7 +17,7 @@ export const ImageRenderer: React.FC<{ customImage?: Image }> = ({
         <div className="align-rendered-image">
           <div
             style={{ backgroundImage: `url(${url})` }}
-            className="align-rendered-image"
+            className="rendered-card-image"
           />
           {hasAlt && <span className="sr-only">{alt}</span>}
         </div>
@@ -32,3 +32,15 @@ export const ImageRenderer: React.FC<{ customImage?: Image }> = ({
     </div>
   );
 };
+
+/*(
+        <div className="align-rendered-image rendered-card-image ">
+          <img
+            src={url}
+            alt={alt}
+            className="w-full h-full object-cover"
+          />
+          {hasAlt && <span className="sr-only">{alt}</span>}
+        </div>
+      )
+ */
