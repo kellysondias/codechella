@@ -6,7 +6,12 @@ const Experience = () => (
   <section>
     <Hero />
     {data.map((content) => (
-      <Card image={content.image} title={content.title} text={content.text} />
+      <Card
+        image={content.image}
+        title={content.title}
+        text={content.text}
+        key={content.id}
+      />
     ))}
   </section>
 );

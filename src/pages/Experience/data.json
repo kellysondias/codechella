@@ -2,10 +2,28 @@
   {
     "image": {
       "url": "https://quantocustaviajar.com/blog/wp-content/uploads/2022/03/cat-scaled.jpg",
-      "alt": "A imagem apresenta uma mulher negra de cabelo raspado, usando uma blusa verde e calças pretas dançando enquanto confetes coloridos caem sobre ela"
+      "alt": "A imagem apresenta uma mulher negra de cabelo raspado, usando uma blusa verde e calças pretas dançando enquanto confetes coloridos caem sobre ela."
     },
     "title": "Acessibilidade e Inclusão",
     "text": "Nosso evento tenta abraçar um público mais amplo em todos os sentidos, de todas as idades, corpos, gostos e pensamentos!  Isso está presente no  espaço físico, na sinalização, no treinamento da equipe de apoio, na comunicação em libras, braile, visual e tátil. Além disso, dispomos de ingressos gratuitos para pessoas com deficiência e acompanhantes, pessoas idosas e crianças!",
     "id": 1
+  },
+  {
+    "image": {
+      "url": "https://quantocustaviajar.com/blog/wp-content/uploads/2022/03/cat-scaled.jpg",
+      "alt": "A imagem apresenta uma ecobag carregada por um pessoa. A bolsa está cheia de garrafas sendo separadas para reciclagem."
+    },
+    "title": "Sustentabilidade",
+    "text": "Queremos estar aqui celebrando daqui a 50, 100 anos! Por isso, levamos o futuro do nosso planeta a sério. Nosso festival é carbono zero, com utilização de copos retornáveis, coleta e destinação adequada de resíduos, e transporte coletivo.",
+    "id": 2
+  },
+  {
+    "image": {
+      "url": "https://quantocustaviajar.com/blog/wp-content/uploads/2022/03/cat-scaled.jpg",
+      "alt": "A imagem apresenta uma roda-gigante, com um céu ensolarado de fundo."
+    },
+    "title": "Atrações",
+    "text": "Intervenções artísticas e culturais para todos os gostos! Durante os intervalos dos shows, nossa experiência contará com recreação para crianças, oficina de cerâmica, origami, circo e aquarela! Além disso, nosso espaço contra com 3 praças de alimentação, roda gigante e outros brinquedos!",
+    "id": 3
   }
 ]
