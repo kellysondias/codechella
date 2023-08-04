@@ -70,6 +70,7 @@ module.exports = {
       backgroundImage: {
         "summer-banner": "url('/assets/img/summer/summer-banner.jpeg')",
         "boreal-banner": "url('/assets/img/boreal/boreal-banner.jpeg')",
+        "experience-banner": "url('/assets/img/pages/experience/experience-banner.png')",
         "summer-card": "url('/assets/img/summer/summer-1.jpeg')",
         "boreal-card": "url('/assets/img/boreal/boreal-1.jpeg')",
         "summer-footer": "url('/assets/img/summer/summer-footer.jpg')",

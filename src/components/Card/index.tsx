@@ -9,13 +9,26 @@ interface Props {
   title: string;
   text: string;
   button?: ButtonComponent;
+  listIndex?: number;
 }
 
-export const Card: React.FC<Props> = ({ image, title, text, button }) => {
+export const Card: React.FC<Props> = ({
+  image,
+  title,
+  text,
+  button,
+  listIndex,
+}) => {
   const hasButton = Boolean(button);
 
+  // const isList = Boolean(listIndex !== undefined && listIndex > 0);
+
+  // const listStyle = isList && "lg:first:bg-red-700 lg:odd:flex-row-reverse lg:odd:only:flex-row";
+
   return (
-    <div className="flex flex-wrap justify-center items-center mx-16 py-20 max-[1257px]:py-8">
+    <div
+      className={`flex flex-wrap justify-center items-center mx-16 py-20 max-[1257px]:py-8 lg:odd:flex-row-reverse lg:odd:only:flex-row"`}
+    >
       <ImageRenderer customImage={image} />
       <div className="card-text lg:w-[40%]">
         <h2 className="text-3xl my-6 md:mx-20 lg:mx-0">{title}</h2>

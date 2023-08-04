@@ -1,7 +1,7 @@
 [
   {
     "image": {
-      "url": "https://quantocustaviajar.com/blog/wp-content/uploads/2022/03/cat-scaled.jpg",
+      "url": "/assets/img/pages/experience/image-1.jpg",
       "alt": "A imagem apresenta uma mulher negra de cabelo raspado, usando uma blusa verde e calças pretas dançando enquanto confetes coloridos caem sobre ela."
     },
     "title": "Acessibilidade e Inclusão",
@@ -10,7 +10,7 @@
   },
   {
     "image": {
-      "url": "https://quantocustaviajar.com/blog/wp-content/uploads/2022/03/cat-scaled.jpg",
+      "url": "/assets/img/pages/experience/image-2.jpg",
       "alt": "A imagem apresenta uma ecobag carregada por um pessoa. A bolsa está cheia de garrafas sendo separadas para reciclagem."
     },
     "title": "Sustentabilidade",
@@ -19,7 +19,7 @@
   },
   {
     "image": {
-      "url": "https://quantocustaviajar.com/blog/wp-content/uploads/2022/03/cat-scaled.jpg",
+      "url": "/assets/img/pages/experience/image-3.jpg",
       "alt": "A imagem apresenta uma roda-gigante, com um céu ensolarado de fundo."
     },
     "title": "Atrações",
