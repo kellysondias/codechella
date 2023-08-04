@@ -27,7 +27,7 @@ export const Card: React.FC<Props> = ({
 
   return (
     <div
-      className={`flex flex-wrap justify-center items-center mx-16 py-20 max-[1257px]:py-8 lg:odd:flex-row-reverse lg:odd:only:flex-row lg:first:bg-red-700"`}
+      className={`flex flex-wrap justify-center items-center mx-16 py-20 max-[1257px]:py-8 lg:odd:flex-row-reverse lg:odd:only:flex-row lg:first:bg-red-700`}
     >
       <ImageRenderer customImage={image} />
       <div className="card-text lg:w-[40%]">
