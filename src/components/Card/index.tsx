@@ -5,29 +5,27 @@ import type { Image } from "../../Types/Image";
 import type { ButtonComponent } from "../../Types/ButtonComponent";
 
 interface Props {
+  isList?: boolean;
   image?: Image;
   title: string;
   text: string;
   button?: ButtonComponent;
-  listIndex?: number;
 }
 
 export const Card: React.FC<Props> = ({
+  isList,
   image,
   title,
   text,
   button,
-  listIndex,
 }) => {
   const hasButton = Boolean(button);
 
-  // const isList = Boolean(listIndex !== undefined && listIndex > 0);
-
-  // const listStyle = isList && "lg:first:bg-red-700 lg:odd:flex-row-reverse lg:odd:only:flex-row";
+  const listStyle = isList && "first:bg-blue-700 lg:odd:flex-row-reverse";
 
   return (
     <div
-      className={`flex flex-wrap justify-center items-center mx-16 py-20 max-[1257px]:py-8 lg:odd:flex-row-reverse lg:odd:only:flex-row lg:first:bg-red-700`}
+      className={`flex flex-wrap justify-center items-center mx-16 py-20 max-[1257px]:py-8 ${listStyle}`}
     >
       <ImageRenderer customImage={image} />
       <div className="card-text lg:w-[40%]">

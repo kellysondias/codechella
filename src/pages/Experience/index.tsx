@@ -7,11 +7,11 @@ const Experience = () => (
     <Hero />
     {data.map((content, index) => (
       <Card
+        isList
         image={content.image}
         title={content.title}
         text={content.text}
         key={content.id}
-        listIndex={index}
       />
     ))}
   </section>
