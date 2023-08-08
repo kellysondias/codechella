@@ -5,7 +5,7 @@ import data from "./data.json";
 const Experience = () => (
   <section>
     <Hero />
-    {data.map((content, index) => (
+    {data.map((content) => (
       <Card
         isList
         image={content.image}
