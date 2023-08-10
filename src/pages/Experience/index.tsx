@@ -5,9 +5,10 @@ import data from "./data.json";
 const Experience = () => (
   <section>
     <Hero />
-    {data.map((content) => (
+    {data.map((content, index, array) => (
       <Card
-        isList
+        isFirstCard={index === 0}
+        length={array.length}
         image={content.image}
         title={content.title}
         text={content.text}
