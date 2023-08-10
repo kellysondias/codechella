@@ -33,7 +33,7 @@
   }
 
   .card-text {
-    @apply flex flex-col items-center justify-center text-center text-summer-gray mx-5 dark:text-white md:mx-20 lg:mx-0;
+    @apply flex flex-col items-center justify-center text-center text-summer-gray mx-5 dark:text-white md:mx-20 lg:mx-10;
   }
 
   .line-up-header {

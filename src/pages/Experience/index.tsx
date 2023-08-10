@@ -7,7 +7,7 @@ const Experience = () => (
     <Hero />
     {data.map((content, index, array) => (
       <Card
-        isFirstCard={index === 0}
+        index={index}
         length={array.length}
         image={content.image}
         title={content.title}

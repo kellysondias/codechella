@@ -5,20 +5,22 @@ import alts from "./alts.json";
 interface Props {
   customImage?: Image;
   isList: boolean | undefined;
-  isFirstImage: boolean | undefined;
+  index: number | undefined;
 }
 
 export const ImageRenderer: React.FC<Props> = ({
   customImage,
   isList,
-  isFirstImage,
+  index,
 }) => {
   const { url, alt } = customImage ?? {};
   const { summerAlt, borealAlt } = alts;
 
+  const isFirstImage = index === 0;
   const hasCustomImage = Boolean(customImage);
   const hasAlt = Boolean(alt);
-  const imageBorder = isList && isFirstImage ? "lg:rounded-l-2xl" : "rounded-2xl";
+
+  const firstImageBorder = isList && isFirstImage ? "xl:rounded-l-2xl" : "";
 
   return (
     <div className="flex justify-center h-full">
@@ -26,7 +28,7 @@ export const ImageRenderer: React.FC<Props> = ({
         <div className="align-rendered-image">
           <div
             style={{ backgroundImage: `url(${url})` }}
-            className={`rendered-card-image ${imageBorder}`}
+            className={`rendered-card-image rounded-2xl ${firstImageBorder}`}
           />
           {hasAlt && <span className="sr-only">{alt}</span>}
         </div>
