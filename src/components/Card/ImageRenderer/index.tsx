@@ -21,7 +21,7 @@ export const ImageRenderer: React.FC<Props> = ({
   const hasCustomImage = Boolean(customImage);
   const hasAlt = Boolean(alt);
 
-  const firstImageBorder = classNames({
+  const imageBorder = classNames({
     "xl:rounded-l-2xl": isList && isFirstImage,
     "rounded-2xl": !isList || !isFirstImage,
   });
@@ -32,7 +32,7 @@ export const ImageRenderer: React.FC<Props> = ({
         <div className="align-rendered-image">
           <div
             style={{ backgroundImage: `url(${url})` }}
-            className={`rendered-card-image ${firstImageBorder}`}
+            className={`rendered-card-image ${imageBorder}`}
           />
           {hasAlt && <span className="sr-only">{alt}</span>}
         </div>
