@@ -38,7 +38,7 @@ export const ImageRenderer: React.FC<Props> = ({
         </div>
       ) : (
         <div className="align-rendered-image">
-          <div className="rendered-default-image" />
+          <div className="rendered-default-image rounded-2xl" />
 
           <span className="sr-only dark:hidden">{summerAlt}</span>
           <span className="hidden dark:sr-only">{borealAlt}</span>
