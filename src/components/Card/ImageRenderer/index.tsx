@@ -1,6 +1,7 @@
 import React from "react";
 import type { Image } from "../../../Types/Image";
 import alts from "./alts.json";
+import classNames from "classnames";
 
 interface Props {
   customImage?: Image;
@@ -20,7 +21,10 @@ export const ImageRenderer: React.FC<Props> = ({
   const hasCustomImage = Boolean(customImage);
   const hasAlt = Boolean(alt);
 
-  const firstImageBorder = isList && isFirstImage ? "xl:rounded-l-2xl" : "";
+  const firstImageBorder = classNames({
+    "xl:rounded-l-2xl": isList && isFirstImage,
+    "rounded-2xl": !isList || !isFirstImage,
+  });
 
   return (
     <div className="flex justify-center h-full">
@@ -28,7 +32,7 @@ export const ImageRenderer: React.FC<Props> = ({
         <div className="align-rendered-image">
           <div
             style={{ backgroundImage: `url(${url})` }}
-            className={`rendered-card-image rounded-2xl ${firstImageBorder}`}
+            className={`rendered-card-image ${firstImageBorder}`}
           />
           {hasAlt && <span className="sr-only">{alt}</span>}
         </div>
