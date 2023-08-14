@@ -49,7 +49,7 @@
   }
 
   .rendered-default-image {
-    @apply rendered-card-image bg-summer-card dark:bg-boreal-card;
+    @apply rendered-card-image rounded-2xl bg-summer-card dark:bg-boreal-card;
   }
 
   .row-container {
