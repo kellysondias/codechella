@@ -9,15 +9,18 @@ export const Map = () => {
       <div>
         <img src={url} alt={alt} />
       </div>
-      <div>
-        <h4 className="text-xl font-bold dark:text-white">{title}</h4>
+      <div className="">
+        <h4 className="text-xl mt-8 font-bold text-gray-900 dark:text-white">
+          {title}
+        </h4>
         <div>
           {lanes.map(({ id, color, text }) => (
-            <div key={id}>
-              <div className={`w-8 ${color}`}>
-                ff
-              </div>
-              <span>{text}</span>
+            <div className="flex my-6 mb-0" key={id}>
+              <div
+                className={`flex mr-4 w-7 h-7`}
+                style={{ backgroundColor: color }}
+              />
+              <span className="text-gray-800">{text}</span>
             </div>
           ))}
         </div>
