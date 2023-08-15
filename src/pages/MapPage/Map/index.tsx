@@ -14,7 +14,7 @@ export const Map = () => {
         <div>
           {lanes.map(({ id, color, text }) => (
             <div key={id}>
-              <div className={`w-8`} style={{ backgroundColor: color }}>
+              <div className={`w-8 ${color}`}>
                 ff
               </div>
               <span>{text}</span>
