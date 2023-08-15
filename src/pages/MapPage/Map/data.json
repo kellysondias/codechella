@@ -1,0 +1,34 @@
+{
+  "image": {
+    "url": "assets/img/pages/map/map.png",
+    "alt": "Mapa dos setores do Codechella"
+  },
+  "title": "Legenda",
+  "lanes": [
+    {
+      "id": 1,
+      "text": "Pista Premium",
+      "color": "#0E7DF1"
+    },
+    {
+      "id": 2,
+      "text": "Pista Comum",
+      "color": "#FE016E"
+    },
+    {
+      "id": 3,
+      "text": "Cadeiras térreo",
+      "color": "#01A89E"
+    },
+    {
+      "id": 4,
+      "text": "Cadeiras superiores",
+      "color": "#3F51B5"
+    },
+    {
+      "id": 5,
+      "text": "Rampas",
+      "color": "#0E7DF1"
+    }
+  ]
+}

@@ -8,8 +8,6 @@ export const Logo: React.FC<{ isFooterLogo?: boolean }> = ({
   const logo = isFooterLogo
     ? "bg-black-logo dark:bg-white-logo"
     : "bg-white-logo";
-  
-  const link = !isFooterLogo && "/"
 
   return (
     <div className="flex justify-center md:py-5">

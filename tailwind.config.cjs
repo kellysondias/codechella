@@ -36,6 +36,10 @@ module.exports = {
           green: "#008364",
           hero: "#ffffff",
         },
+        lanes: {
+          "lane-1": "#0E7DF1",
+          "lane-2": ""
+        }
       },
       fontFamily: {
         text: "Raleway",

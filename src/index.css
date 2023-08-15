@@ -8,6 +8,7 @@
     @apply font-title;
   }
 
+  h4,
   p,
   nav {
     @apply font-text;

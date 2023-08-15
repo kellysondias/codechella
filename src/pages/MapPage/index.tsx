@@ -1,12 +1,14 @@
 import React from "react";
 import { Hero } from "./Hero";
+import { Map } from "./Map";
 
-const Map: React.FC = () => {
+const MapPage: React.FC = () => {
   return (
     <section>
       <Hero />
+      <Map />
     </section>
   );
 };
 
-export default Map;
+export default MapPage;

@@ -3,5 +3,9 @@ import { Banner } from "../../../components/Banner";
 import data from "./data.json";
 
 export const Hero: React.FC = () => (
-  <Banner text={data.text} background="bg-experience-banner" />
+  <Banner
+    text={data.text}
+    background="bg-map-banner"
+    position="bg-right-bottom"
+  />
 );
