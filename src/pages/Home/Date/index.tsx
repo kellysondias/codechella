@@ -9,16 +9,12 @@ export const Date: React.FC = () => {
   const ticketButton = {
     children: buttonText,
     icon: faTicket,
-    link: "/ingresso"
+    link: "ingresso",
   };
 
   return (
     <div className="text-center">
-      <Card
-        button={ticketButton}
-        title={title}
-        text={dateText}
-      />
+      <Card button={ticketButton} title={title} text={dateText} />
     </div>
   );
 };
