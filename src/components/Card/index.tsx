@@ -1,10 +1,11 @@
 import React from "react";
 import { Button } from "../Button";
 import { ImageRenderer } from "./ImageRenderer";
-import type { Image } from "../../Types/Image";
-import type { ButtonComponent } from "../../Types/ButtonComponent";
+import type Image from "../../Types/Image";
+import type CardButton from "../../Types/CardButton";
 import listStyler from "./style/listStyler";
 import smallerCardStyle from "./style/smallerStyle";
+import { Link } from "react-router-dom";
 
 interface Props {
   title: string;
@@ -13,7 +14,7 @@ interface Props {
   length?: number;
   index?: number | undefined;
   smaller?: boolean | undefined;
-  button?: ButtonComponent;
+  button?: CardButton;
 }
 
 export const Card: React.FC<Props> = ({
@@ -49,7 +50,11 @@ export const Card: React.FC<Props> = ({
           {title}
         </h2>
         <p className="text-xl leading-loose">{text}</p>
-        {hasButton && <Button icon={button?.icon}>{button?.children}</Button>}
+        {hasButton && (
+          <Link to={button?.link}>
+            <Button icon={button?.icon}>{button?.children}</Button>
+          </Link>
+        )}
       </div>
     </div>
   );
