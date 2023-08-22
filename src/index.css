@@ -84,7 +84,7 @@
   }
 
   .align-rendered-image {
-    @apply flex flex-col items-center;
+    @apply flex items-center;
   }
 
   .flex-center {

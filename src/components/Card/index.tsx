@@ -3,7 +3,8 @@ import { Button } from "../Button";
 import { ImageRenderer } from "./ImageRenderer";
 import type { Image } from "../../Types/Image";
 import type { ButtonComponent } from "../../Types/ButtonComponent";
-import listStyler from "./listStyler";
+import listStyler from "./style/listStyler";
+import smallerCardStyle from "./style/smallerStyle";
 
 interface Props {
   title: string;
@@ -11,6 +12,7 @@ interface Props {
   image?: Image;
   length?: number;
   index?: number | undefined;
+  smaller?: boolean | undefined;
   button?: ButtonComponent;
 }
 
@@ -20,19 +22,26 @@ export const Card: React.FC<Props> = ({
   image,
   length,
   index,
+  smaller,
   button,
 }) => {
   const hasButton = Boolean(button);
   const isList = length !== undefined && length > 1;
   const listStyles = listStyler(isList, index);
+  const smallerStyle = smallerCardStyle(smaller);
 
   return (
     <div
-      className={`flex flex-wrap justify-center items-center mx-16 py-20 max-[1257px]:py-8 ${listStyles.reverseList}`}
+      className={`flex-center flex-wrap mx-16 py-20 max-[1257px]:py-8 ${listStyles.reverseList} ${smallerStyle.paddingY} ${smallerStyle.lgMarginLeftLastX} ${smallerStyle.lgMarginRightFirstX} ${smallerStyle.relativeEven} ${smallerStyle.topEven} ${smallerStyle.staticEven}`}
     >
-      <ImageRenderer customImage={image} isList={isList} index={index} />
+      <ImageRenderer
+        customImage={image}
+        isList={isList}
+        index={index}
+        smaller={smaller}
+      />
       <div
-        className={`flex card-text mx-8 lg:w-[40%] ${listStyles.textAlign.alignOdd.text} ${listStyles.textAlign.alignEven.text}`}
+        className={`flex card-text mx-8 lg:w-[40%] ${smallerStyle.textWidth} ${listStyles.textAlign.alignOdd.text} ${listStyles.textAlign.alignEven.text}`}
       >
         <h2
           className={`self-center text-3xl my-6 md:mx-20 lg:mx-0 ${listStyles.textAlign.alignOdd.title} ${listStyles.textAlign.alignEven.title}`}

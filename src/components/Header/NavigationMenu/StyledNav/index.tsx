@@ -16,7 +16,9 @@ export const StyledNav: React.FC<Props> = ({
     : `flex animate-back-out ${isHidden && "hidden"}`;
 
   return (
-    <nav className={`menu-nav ${navAnimation} sm:flex sm:animate-none`}>
+    <nav
+      className={`menu-nav absolute text-white inline-block w-full h-full inset-0 justify-center items-center bg-summer-blue-100/10 dark:bg-boreal-blue-100/10 font-bold sm:static sm:bg-transparent sm:before:hidden sm:animate-none ${navAnimation} sm:flex sm:animate-none`}
+    >
       {children}
     </nav>
   );

@@ -16,6 +16,7 @@ export default function AppRouter() {
             <Route index element={<Home />} />
             <Route path="experiencia" element={<Experience />} />
             <Route path="mapa-de-setores" element={<MapPage />} />
+            <Route path="informacoes" element={<></>} />
           </Route>
         </Routes>
       </Router>
