@@ -51,7 +51,7 @@ export const Card: React.FC<Props> = ({
         </h2>
         <p className="text-xl leading-loose">{text}</p>
         {hasButton && (
-          <Link to={`/${button?.link}`}>
+          <Link to={`/${button?.to}`}>
             <Button icon={button?.icon}>{button?.children}</Button>
           </Link>
         )}

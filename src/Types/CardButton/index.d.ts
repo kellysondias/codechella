@@ -2,7 +2,7 @@ import { Icon, IconDefinition } from "@fortawesome/fontawesome-svg-core";
 
 type CardButton = {
   children: string | undefined;
-  link: To;
+  to: To;
   icon?: Icon | IconDefinition;
 };
 

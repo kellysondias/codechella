@@ -9,7 +9,7 @@ export const Date: React.FC = () => {
   const ticketButton = {
     children: buttonText,
     icon: faTicket,
-    link: "ingresso",
+    to: "ingresso",
   };
 
   return (

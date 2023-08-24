@@ -76,6 +76,7 @@ module.exports = {
         "boreal-banner": "url('/assets/img/boreal/boreal-banner.jpeg')",
         "experience-banner": "url('/assets/img/pages/experience/banner.png')",
         "map-banner": "url('/assets/img/pages/map/banner.png')",
+        "information-banner": "url('/assets/img/pages/information/banner.png')",
         "summer-card": "url('/assets/img/summer/summer-1.jpeg')",
         "boreal-card": "url('/assets/img/boreal/boreal-1.jpeg')",
         "summer-footer": "url('/assets/img/summer/summer-footer.jpg')",

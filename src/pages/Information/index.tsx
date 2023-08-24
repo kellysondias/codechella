@@ -1,5 +1,13 @@
-const Information = () => {
-    return <>Information</>
-}
+import { CommonQuestions } from "./CommonQuestions";
+import { Hero } from "./Hero";
 
-export default Information
+const Information = () => {
+  return (
+    <section>
+      <Hero />
+      <CommonQuestions />
+    </section>
+  );
+};
+
+export default Information;

@@ -1,0 +1,29 @@
+{
+  "title": "Perguntas Frequentes:",
+  "questions": [
+    {
+      "question": "Quais serão as atrações?",
+      "text": "Teremos dois dias de shows, o primeiro (11/03) com bandas de rock, e o segundo (12/03) com bandas pop.",
+      "link": {
+        "text": "Confira o line-up em detalhes clicando neste link!",
+        "to": "/#line-up"
+      },
+      "id": 1
+    },
+    {
+      "question": "Qual é a classificação etária?",
+      "text": "O Codechella é um festival destinado a maiores de 18 anos. A entrada é permitida apenas para adultos com idade igual ou superior a 18 anos.",
+      "id": 2
+    },
+    {
+      "question": "Quais são os setores disponíveis?",
+      "text": "No Codechella, oferecemos 'Pista Premium' (próxima ao palco, com acesso a banheiros e bares), 'Pista Comum' (espaço amplo com descanso), 'Cadeiras Térreo' e 'Cadeiras Superiores' (visão elevada) e rampas de acesso.",
+      "id": 3
+    },
+    {
+      "question": "Quais são os itens proibidos?",
+      "text": "No Codechella, não são permitidas armas, substâncias ilegais, produtos de vidro, animais de estimação (exceto cães-guia), drones não autorizados e objetos perigosos. Queremos garantir a segurança de todos os participantes.",
+      "id": 4
+    }
+  ]
+}
