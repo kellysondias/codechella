@@ -18,7 +18,7 @@
 @tailwind components;
 @layer components {
   .button {
-    @apply flex-center w-full text-white rounded-2xl font-text py-4 px-11 my-6 shadow-xl shadow-black-100 bg-summer-blue-100 dark:bg-boreal-blue-100 text-sm sm:text-xl sm:text-center md:w-auto md:px-5;
+    @apply flex-center my-6 mx-auto text-white rounded-2xl font-text py-4 px-11 shadow-xl shadow-black-100 bg-summer-blue-100 dark:bg-boreal-blue-100 text-lg sm:text-xl sm:text-center md:w-auto md:px-5;
   }
 
   .menu-item {

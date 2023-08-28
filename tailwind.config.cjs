@@ -77,6 +77,8 @@ module.exports = {
         "experience-banner": "url('/assets/img/pages/experience/banner.png')",
         "map-banner": "url('/assets/img/pages/map/banner.png')",
         "information-banner": "url('/assets/img/pages/information/banner.png')",
+        "ticket-form-banner": "url('/assets/img/pages/tickets/ticket-form/banner.png')",
+        "ticket-page-banner": "url('/assets/img/pages/tickets/ticket-page/banner.png')",
         "summer-card": "url('/assets/img/summer/summer-1.jpeg')",
         "boreal-card": "url('/assets/img/boreal/boreal-1.jpeg')",
         "summer-footer": "url('/assets/img/summer/summer-footer.jpg')",

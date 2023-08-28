@@ -1,0 +1,12 @@
+{
+    "title": "Preencha o formulário a seguir:",
+    "inputs": {
+        "headers": [
+            "Nome Completo:",
+            "Email:",
+            "Tipo de ingresso",
+            "Data de nascimento:"
+        ]
+    },
+    "buttonText": "Avançar!"
+}

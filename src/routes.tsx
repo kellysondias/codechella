@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Experience from "./pages/Experience";
 import MapPage from "./pages/MapPage";
 import Information from "./pages/Information";
+import Tickets from "./pages/Tickets";
 
 export default function AppRouter() {
   return (
@@ -18,6 +19,7 @@ export default function AppRouter() {
             <Route path="experiencia" element={<Experience />} />
             <Route path="mapa-de-setores" element={<MapPage />} />
             <Route path="informacoes" element={<Information />} />
+            <Route path="ingresso" element={<Tickets />} />
           </Route>
         </Routes>
       </Router>
