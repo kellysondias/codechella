@@ -2,22 +2,27 @@ import * as Yup from "yup";
 import differenceInYears from "date-fns/differenceInYears";
 
 const feedback = {
-  requiredNameMessage: "Nome é obrigatório",
+  birthdateTest: {
+    message: "Você precisa ter mais de 18 anos para participar do Codechella",
+    test: "birth-date",
+  },
   invalidEmailMessage: "Este e-mail não é válido",
+  requiredBirthdateMessage: "Data de nascimento é obrigatória",
   requiredEmailMessage: "E-mail é obrigatório",
+  requiredNameMessage: "Nome é obrigatório",
 };
 
-const schema = Yup.object().shape({
+const validationSchema = Yup.object().shape({
   name: Yup.string().min(2).required(feedback.requiredNameMessage),
   email: Yup.string()
     .email(feedback.invalidEmailMessage)
     .required(feedback.requiredEmailMessage),
-  birthDate: Yup.date()
-    .required("Data de nascimento é obrigatória")
+  birthdate: Yup.date()
+    .required(feedback.requiredBirthdateMessage)
     .nullable()
     .test(
-      "birth-date",
-      "Você precisa ter mais de 18 anos para participar do Codechella",
+      feedback.birthdateTest.test,
+      feedback.birthdateTest.message,
       (value) => {
         if (!value) return false;
         else return differenceInYears(new Date(), new Date(value)) >= 18;
@@ -25,4 +30,4 @@ const schema = Yup.object().shape({
     ),
 });
 
-export default schema;
+export default validationSchema;

@@ -1,6 +1,6 @@
 import React from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
-import schema from "./schema/schema";
+import validationSchema from "./schema/validationSchema";
 import { Button } from "../../../components/Button";
 import { faArrowRightLong } from "@fortawesome/free-solid-svg-icons";
 
@@ -8,7 +8,7 @@ const TicketForm: React.FC = () => {
   const initialValues = {
     name: "",
     email: "",
-    birthDate: "",
+    birthdate: "",
   };
 
   const handleSubmit = () => {};
@@ -16,7 +16,7 @@ const TicketForm: React.FC = () => {
   return (
     <Formik
       initialValues={initialValues}
-      validationSchema={schema}
+      validationSchema={validationSchema}
       onSubmit={handleSubmit}
     >
       <Form>
@@ -42,9 +42,9 @@ const TicketForm: React.FC = () => {
         </div>
 
         <div>
-          <label htmlFor="birthDate">Data de nascimento:</label>
-          <Field type="date" id="birthDate" name="birthDate" />
-          <ErrorMessage name="birthDate" component="div" />
+          <label htmlFor="birthdate">Data de nascimento:</label>
+          <Field type="date" id="birthdate" name="birthdate" />
+          <ErrorMessage name="birthdate" component="div" />
         </div>
 
         <Button type="submit" icon={faArrowRightLong}>
