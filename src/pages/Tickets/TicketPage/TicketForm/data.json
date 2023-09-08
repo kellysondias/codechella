@@ -1,0 +1,35 @@
+{
+  "inputs": [
+    {
+      "title": "Nome Completo:",
+      "name": "name"
+    },
+    {
+      "title": "Email:",
+      "name": "email",
+      "type": "email"
+    },
+    {
+      "title": "Tipo de ingresso",
+      "name": "ticketType",
+      "as": "select",
+      "placeholder": "Tipo de ingresso",
+      "options": [
+        {
+          "option": "Normal",
+          "value": "normal"
+        },
+        {
+          "option": "Premium",
+          "value": "premium"
+        }
+      ]
+    },
+    {
+      "title": "Data de nascimento:",
+      "name": "birthdate",
+      "type": "date"
+    }
+  ],
+  "buttonText": "Avançar!"
+}

@@ -12,11 +12,17 @@ const feedback = {
   requiredNameMessage: "Nome é obrigatório",
 };
 
+// https://yidaotus.medium.com/using-yup-and-typescript-for-typesafe-select-validation-e9ee9d4bceec
+
 const validationSchema = Yup.object().shape({
   name: Yup.string().min(2).required(feedback.requiredNameMessage),
   email: Yup.string()
     .email(feedback.invalidEmailMessage)
     .required(feedback.requiredEmailMessage),
+  select: Yup.string()
+    .required("")
+    .oneOf(["normal", "premium"])
+    .label("Tipo de ingresso"),
   birthdate: Yup.date()
     .required(feedback.requiredBirthdateMessage)
     .nullable()
@@ -24,6 +30,7 @@ const validationSchema = Yup.object().shape({
       feedback.birthdateTest.test,
       feedback.birthdateTest.message,
       (value) => {
+        console.log(value);
         if (!value) return false;
         else return differenceInYears(new Date(), new Date(value)) >= 18;
       }

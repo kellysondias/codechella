@@ -7,8 +7,6 @@ export const Hero: React.FC = () => (
     isHome
     text={bannerText.line1}
     bottomText={bannerText.line2}
-    blur="bg-red-700"
-    borealBlur="bg-blue-700"
     background="bg-summer-banner"
   />
 );

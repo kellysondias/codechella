@@ -10,7 +10,8 @@
 
   h4,
   p,
-  nav {
+  nav,
+  label {
     @apply font-text;
   }
 }
