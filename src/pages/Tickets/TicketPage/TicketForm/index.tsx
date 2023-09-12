@@ -16,13 +16,18 @@ export const TicketForm: React.FC = () => {
 
   const { inputs, buttonText } = data;
 
-  const handleSubmit = () => {};
+  const handleSubmit = (e: any) => {
+    console.log("EVENTO:", e);
+  };
 
   return (
     <Formik
       initialValues={initialValues}
       validationSchema={validationSchema}
-      onSubmit={handleSubmit}
+      onSubmit={(values, { resetForm }) => {
+        console.log("Form submitted with values:", values);
+        // resetForm()
+      }}
     >
       <Form className="mt-4 md:px-10">
         <div className="flex justify-center items-center flex-wrap max-lg:flex-col mb-3 xl:px-20 xl:justify-evenly">
@@ -38,7 +43,7 @@ export const TicketForm: React.FC = () => {
             />
           ))}
         </div>
-        <Button buttonClasses="mt-0 px-5" type="submit" icon={faArrowRightLong}>
+        <Button buttonclasses="mt-0 px-5" icon={faArrowRightLong}>
           {buttonText}
         </Button>
       </Form>

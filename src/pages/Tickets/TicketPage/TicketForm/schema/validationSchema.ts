@@ -20,9 +20,8 @@ const validationSchema = Yup.object().shape({
     .email(feedback.invalidEmailMessage)
     .required(feedback.requiredEmailMessage),
   select: Yup.string()
-    .required("")
-    .oneOf(["normal", "premium"])
-    .label("Tipo de ingresso"),
+    .oneOf(["normal", "premium"], "Você precisa escolher um tipo de ingresso")
+    .required("Você precisa escolher um tipo de ingresso"),
   birthdate: Yup.date()
     .required(feedback.requiredBirthdateMessage)
     .nullable()
@@ -30,7 +29,6 @@ const validationSchema = Yup.object().shape({
       feedback.birthdateTest.test,
       feedback.birthdateTest.message,
       (value) => {
-        console.log(value);
         if (!value) return false;
         else return differenceInYears(new Date(), new Date(value)) >= 18;
       }

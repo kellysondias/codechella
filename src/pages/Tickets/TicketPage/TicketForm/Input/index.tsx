@@ -32,7 +32,7 @@ export const Input: React.FC<Props> = ({
     birthdate: {
       mdWidth: applyClasses(birthdate, "md:w-[25rem]"),
       lgWidth: applyClasses(birthdate, "lg:w-full"),
-      xlWidth: applyClasses(birthdate, "xl:w-[17rem] max-xl:bg-red-700"),
+      xlWidth: applyClasses(birthdate, "xl:w-[17rem]"),
       mdSelfStart: applyClasses(birthdate, "md:self-start"),
       lgSelfCenter: applyClasses(birthdate, "lg:self-center"),
     },
@@ -55,7 +55,7 @@ export const Input: React.FC<Props> = ({
       </label>
       {!isSelect ? (
         <Field
-          className={`w-full p-2`}
+          className="w-full p-2 font-text"
           as={as}
           type={inputType}
           name={name}
@@ -66,7 +66,7 @@ export const Input: React.FC<Props> = ({
           as="select"
           id={name}
           name={name}
-          className={`w-full text-[1.375rem] p-2`}
+          className={`font-text w-full text-[1.3rem] p-2`}
         >
           <option value="" className="hidden">
             {placeholder}
@@ -82,7 +82,7 @@ export const Input: React.FC<Props> = ({
       <ErrorMessage
         component="span"
         name={name}
-        className="text-red-700 dark:text-white"
+        className="font-text text-red-700 dark:text-white"
       />
     </div>
   );
